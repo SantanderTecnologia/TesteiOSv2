@@ -1,0 +1,940 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1302BA8CB864947C29481CF5 /* Pods_BankAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2B4CD05740A05ABFF8BA9A /* Pods_BankAppTests.framework */; };
+		4B442A1B2294949700717371 /* StatementItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B442A192294949700717371 /* StatementItemTableViewCell.swift */; };
+		4B442A1C2294949700717371 /* StatementItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B442A1A2294949700717371 /* StatementItemTableViewCell.xib */; };
+		4B442A1E229496DE00717371 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B442A1D229496DE00717371 /* UITableView+Extension.swift */; };
+		4B442A202294A72E00717371 /* UserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B442A1F2294A72E00717371 /* UserHelper.swift */; };
+		4B442A232294AE0F00717371 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B442A222294AE0F00717371 /* Double+Extension.swift */; };
+		916AC959A353D8E2C21F2E04 /* Pods_BankApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A34BC01907E244BA5334B4 /* Pods_BankApp.framework */; };
+		EC5A11502295ED8E00BC95E8 /* MainTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A114F2295ED8E00BC95E8 /* MainTableTests.swift */; };
+		EC5A11522295F89000BC95E8 /* StatementWrapper.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5A11512295F89000BC95E8 /* StatementWrapper.json */; };
+		EC5A11572296093500BC95E8 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A11562296093500BC95E8 /* ExtensionTests.swift */; };
+		EC5CDA202292AB10000BB706 /* LoginCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CDA1F2292AB10000BB706 /* LoginCoordinatorDelegate.swift */; };
+		EC5CDA232292ABCB000BB706 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CDA222292ABCB000BB706 /* LoginRepository.swift */; };
+		EC5CDA252292ABD5000BB706 /* LoginRepositoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CDA242292ABD5000BB706 /* LoginRepositoryDelegate.swift */; };
+		EC5CDA292292ADA0000BB706 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CDA282292ADA0000BB706 /* LoginModel.swift */; };
+		EC5CDA2C2292B040000BB706 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CDA2B2292B040000BB706 /* Network.swift */; };
+		EC5CDA2E2292B1F0000BB706 /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CDA2D2292B1F0000BB706 /* NSError+Extension.swift */; };
+		EC5CDA302292B322000BB706 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CDA2F2292B322000BB706 /* Requestable.swift */; };
+		EC5CDA322292B53B000BB706 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CDA312292B53B000BB706 /* LoginRequest.swift */; };
+		EC5CDA352292C219000BB706 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CDA342292C219000BB706 /* KeychainHelper.swift */; };
+		EC5DF3CC22921714006622C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DF3CB22921714006622C4 /* AppDelegate.swift */; };
+		EC5DF3D322921715006622C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5DF3D222921715006622C4 /* Assets.xcassets */; };
+		EC5DF3D622921715006622C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5DF3D422921715006622C4 /* LaunchScreen.storyboard */; };
+		EC5DF3F022921855006622C4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DF3EF22921855006622C4 /* AppCoordinator.swift */; };
+		EC5DF3F222921866006622C4 /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DF3F122921866006622C4 /* CoordinatorDelegate.swift */; };
+		EC5DF3F522921D90006622C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DF3F322921D90006622C4 /* LoginViewController.swift */; };
+		EC5DF3F622921D90006622C4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5DF3F422921D90006622C4 /* LoginViewController.xib */; };
+		EC5DF3FD22921E3F006622C4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DF3FC22921E3F006622C4 /* UIViewController+Extension.swift */; };
+		EC5DF3FF22922263006622C4 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DF3FE22922263006622C4 /* LoginCoordinator.swift */; };
+		EC5DF401229225A9006622C4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DF400229225A9006622C4 /* LoginPresenter.swift */; };
+		EC5DF403229225D1006622C4 /* LoginPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DF402229225D1006622C4 /* LoginPresenterDelegate.swift */; };
+		EC5DF405229226E6006622C4 /* LoginViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DF404229226E6006622C4 /* LoginViewDelegate.swift */; };
+		EC5DF40722922EC9006622C4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DF40622922EC9006622C4 /* UIColor+Extension.swift */; };
+		EC5DF40922923198006622C4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DF40822923198006622C4 /* UIView+Extension.swift */; };
+		EC5E80E92294C4A8007CEDB9 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5E80E72294C4A8007CEDB9 /* UserInfoTableViewCell.swift */; };
+		EC5E80EA2294C4A8007CEDB9 /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5E80E82294C4A8007CEDB9 /* UserInfoTableViewCell.xib */; };
+		EC5E80ED2294D939007CEDB9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5E80EC2294D939007CEDB9 /* String+Extension.swift */; };
+		EC5E80EF2294F174007CEDB9 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5E80EE2294F174007CEDB9 /* LoginPresenterTests.swift */; };
+		EC5E80F3229500F5007CEDB9 /* MockLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5E80F2229500F5007CEDB9 /* MockLoader.swift */; };
+		EC5E80F7229501E0007CEDB9 /* LoginModel.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5E80F6229501E0007CEDB9 /* LoginModel.json */; };
+		EC74956522937E800055574E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74956322937E800055574E /* MainTableViewController.swift */; };
+		EC74956622937E800055574E /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC74956422937E800055574E /* MainTableViewController.xib */; };
+		EC749571229381590055574E /* MainTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC749570229381590055574E /* MainTablePresenter.swift */; };
+		EC749573229381670055574E /* MainTablePresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC749572229381670055574E /* MainTablePresenterDelegate.swift */; };
+		EC749575229381A30055574E /* MainTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC749574229381A30055574E /* MainTableViewDelegate.swift */; };
+		EC74957A2293849B0055574E /* MainTableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7495792293849B0055574E /* MainTableCoordinator.swift */; };
+		EC74957D229384AE0055574E /* MainTableCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74957C229384AE0055574E /* MainTableCoordinatorDelegate.swift */; };
+		EC749580229386650055574E /* MainTableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74957F229386650055574E /* MainTableRepository.swift */; };
+		EC749582229386760055574E /* MainTableRepositoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC749581229386760055574E /* MainTableRepositoryDelegate.swift */; };
+		EC7495852293997A0055574E /* StatementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7495842293997A0055574E /* StatementModel.swift */; };
+		EC74958722939C670055574E /* StatementRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74958622939C670055574E /* StatementRequest.swift */; };
+		ECF24C702293A8930049E4A1 /* StatementWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF24C6F2293A8930049E4A1 /* StatementWrapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC5DF3DD22921715006622C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5DF3C022921714006622C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC5DF3C722921714006622C4;
+			remoteInfo = BankApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CEC9ECB32E5A01977B95140 /* Pods-BankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BankAppTests/Pods-BankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		203950FB1AC907BF70A2F699 /* Pods-BankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BankApp/Pods-BankApp.release.xcconfig"; sourceTree = "<group>"; };
+		4B442A192294949700717371 /* StatementItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementItemTableViewCell.swift; sourceTree = "<group>"; };
+		4B442A1A2294949700717371 /* StatementItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementItemTableViewCell.xib; sourceTree = "<group>"; };
+		4B442A1D229496DE00717371 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		4B442A1F2294A72E00717371 /* UserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHelper.swift; sourceTree = "<group>"; };
+		4B442A222294AE0F00717371 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		5F5A31E6BDF521A3FC4043B4 /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B12F3DB69F833925D27C06B6 /* Pods-BankAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BankAppTests/Pods-BankAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE2B4CD05740A05ABFF8BA9A /* Pods_BankAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5A114F2295ED8E00BC95E8 /* MainTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableTests.swift; sourceTree = "<group>"; };
+		EC5A11512295F89000BC95E8 /* StatementWrapper.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StatementWrapper.json; sourceTree = "<group>"; };
+		EC5A11562296093500BC95E8 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		EC5CDA1F2292AB10000BB706 /* LoginCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		EC5CDA222292ABCB000BB706 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		EC5CDA242292ABD5000BB706 /* LoginRepositoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryDelegate.swift; sourceTree = "<group>"; };
+		EC5CDA282292ADA0000BB706 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		EC5CDA2B2292B040000BB706 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		EC5CDA2D2292B1F0000BB706 /* NSError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Extension.swift"; sourceTree = "<group>"; };
+		EC5CDA2F2292B322000BB706 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		EC5CDA312292B53B000BB706 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		EC5CDA342292C219000BB706 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		EC5DF3C822921714006622C4 /* BankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5DF3CB22921714006622C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC5DF3D222921715006622C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC5DF3D522921715006622C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC5DF3D722921715006622C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5DF3DC22921715006622C4 /* BankAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5DF3E222921715006622C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5DF3EF22921855006622C4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EC5DF3F122921866006622C4 /* CoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegate.swift; sourceTree = "<group>"; };
+		EC5DF3F322921D90006622C4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EC5DF3F422921D90006622C4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		EC5DF3FC22921E3F006622C4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		EC5DF3FE22922263006622C4 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		EC5DF400229225A9006622C4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		EC5DF402229225D1006622C4 /* LoginPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterDelegate.swift; sourceTree = "<group>"; };
+		EC5DF404229226E6006622C4 /* LoginViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewDelegate.swift; sourceTree = "<group>"; };
+		EC5DF40622922EC9006622C4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		EC5DF40822923198006622C4 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		EC5E80E72294C4A8007CEDB9 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		EC5E80E82294C4A8007CEDB9 /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
+		EC5E80EC2294D939007CEDB9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		EC5E80EE2294F174007CEDB9 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginPresenterTests.swift; path = ../LoginPresenterTests.swift; sourceTree = "<group>"; };
+		EC5E80F2229500F5007CEDB9 /* MockLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoader.swift; sourceTree = "<group>"; };
+		EC5E80F6229501E0007CEDB9 /* LoginModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LoginModel.json; sourceTree = "<group>"; };
+		EC74956322937E800055574E /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		EC74956422937E800055574E /* MainTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewController.xib; sourceTree = "<group>"; };
+		EC749570229381590055574E /* MainTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTablePresenter.swift; sourceTree = "<group>"; };
+		EC749572229381670055574E /* MainTablePresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTablePresenterDelegate.swift; sourceTree = "<group>"; };
+		EC749574229381A30055574E /* MainTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDelegate.swift; sourceTree = "<group>"; };
+		EC7495792293849B0055574E /* MainTableCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCoordinator.swift; sourceTree = "<group>"; };
+		EC74957C229384AE0055574E /* MainTableCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		EC74957F229386650055574E /* MainTableRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableRepository.swift; sourceTree = "<group>"; };
+		EC749581229386760055574E /* MainTableRepositoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableRepositoryDelegate.swift; sourceTree = "<group>"; };
+		EC7495842293997A0055574E /* StatementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementModel.swift; sourceTree = "<group>"; };
+		EC74958622939C670055574E /* StatementRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementRequest.swift; sourceTree = "<group>"; };
+		ECF24C6F2293A8930049E4A1 /* StatementWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementWrapper.swift; sourceTree = "<group>"; };
+		F0A34BC01907E244BA5334B4 /* Pods_BankApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC5DF3C522921714006622C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916AC959A353D8E2C21F2E04 /* Pods_BankApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5DF3D922921715006622C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1302BA8CB864947C29481CF5 /* Pods_BankAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F3426370410EAF98FD9ACCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A31E6BDF521A3FC4043B4 /* Pods-BankApp.debug.xcconfig */,
+				203950FB1AC907BF70A2F699 /* Pods-BankApp.release.xcconfig */,
+				1CEC9ECB32E5A01977B95140 /* Pods-BankAppTests.debug.xcconfig */,
+				B12F3DB69F833925D27C06B6 /* Pods-BankAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B442A102294941D00717371 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EC5E80E72294C4A8007CEDB9 /* UserInfoTableViewCell.swift */,
+				EC5E80E82294C4A8007CEDB9 /* UserInfoTableViewCell.xib */,
+				4B442A192294949700717371 /* StatementItemTableViewCell.swift */,
+				4B442A1A2294949700717371 /* StatementItemTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		672ED8199534E8859EAD5A5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0A34BC01907E244BA5334B4 /* Pods_BankApp.framework */,
+				DE2B4CD05740A05ABFF8BA9A /* Pods_BankAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC5A114E2295ED7500BC95E8 /* MainTable Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EC5A114F2295ED8E00BC95E8 /* MainTableTests.swift */,
+			);
+			path = "MainTable Tests";
+			sourceTree = "<group>";
+		};
+		EC5A1155229608BA00BC95E8 /* ExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC5A11562296093500BC95E8 /* ExtensionTests.swift */,
+			);
+			path = ExtensionTests;
+			sourceTree = "<group>";
+		};
+		EC5CDA212292ABA5000BB706 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CDA312292B53B000BB706 /* LoginRequest.swift */,
+				EC5CDA222292ABCB000BB706 /* LoginRepository.swift */,
+				EC5CDA242292ABD5000BB706 /* LoginRepositoryDelegate.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EC5CDA2A2292B008000BB706 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CDA2B2292B040000BB706 /* Network.swift */,
+				EC5CDA2F2292B322000BB706 /* Requestable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EC5CDA332292C1F0000BB706 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CDA342292C219000BB706 /* KeychainHelper.swift */,
+				4B442A1F2294A72E00717371 /* UserHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EC5DF3BF22921714006622C4 = {
+			isa = PBXGroup;
+			children = (
+				EC5DF3CA22921714006622C4 /* BankApp */,
+				EC5DF3DF22921715006622C4 /* BankAppTests */,
+				EC5DF3C922921714006622C4 /* Products */,
+				2F3426370410EAF98FD9ACCB /* Pods */,
+				672ED8199534E8859EAD5A5C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC5DF3C922921714006622C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DF3C822921714006622C4 /* BankApp.app */,
+				EC5DF3DC22921715006622C4 /* BankAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC5DF3CA22921714006622C4 /* BankApp */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DF3EC2292179D006622C4 /* Source */,
+				EC5DF3EB22921761006622C4 /* Resources */,
+			);
+			path = BankApp;
+			sourceTree = "<group>";
+		};
+		EC5DF3DF22921715006622C4 /* BankAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC5E80F2229500F5007CEDB9 /* MockLoader.swift */,
+				EC5E80F5229501A0007CEDB9 /* Mocks */,
+				EC5E80F4229500FC007CEDB9 /* Login Tests */,
+				EC5A114E2295ED7500BC95E8 /* MainTable Tests */,
+				EC5A1155229608BA00BC95E8 /* ExtensionTests */,
+				EC5DF3E222921715006622C4 /* Info.plist */,
+			);
+			path = BankAppTests;
+			sourceTree = "<group>";
+		};
+		EC5DF3EB22921761006622C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DF3D222921715006622C4 /* Assets.xcassets */,
+				EC5DF3D422921715006622C4 /* LaunchScreen.storyboard */,
+				EC5DF3D722921715006622C4 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC5DF3EC2292179D006622C4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DF3CB22921714006622C4 /* AppDelegate.swift */,
+				EC5DF3EE229217C5006622C4 /* Coordinator */,
+				EC5DF3FB22921DE9006622C4 /* Extensions */,
+				EC5CDA332292C1F0000BB706 /* Helpers */,
+				EC5CDA2A2292B008000BB706 /* Network */,
+				EC74956122937D420055574E /* Features */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EC5DF3ED229217A9006622C4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CDA212292ABA5000BB706 /* Repository */,
+				EC5DF3F922921DA2006622C4 /* Coordinator */,
+				EC5DF3FA22921DA8006622C4 /* Model */,
+				EC5DF3F722921D95006622C4 /* View */,
+				EC5DF3F822921D9C006622C4 /* Presenter */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EC5DF3EE229217C5006622C4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DF3EF22921855006622C4 /* AppCoordinator.swift */,
+				EC5DF3F122921866006622C4 /* CoordinatorDelegate.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EC5DF3F722921D95006622C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DF404229226E6006622C4 /* LoginViewDelegate.swift */,
+				EC5DF3F322921D90006622C4 /* LoginViewController.swift */,
+				EC5DF3F422921D90006622C4 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC5DF3F822921D9C006622C4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DF400229225A9006622C4 /* LoginPresenter.swift */,
+				EC5DF402229225D1006622C4 /* LoginPresenterDelegate.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EC5DF3F922921DA2006622C4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DF3FE22922263006622C4 /* LoginCoordinator.swift */,
+				EC5CDA1F2292AB10000BB706 /* LoginCoordinatorDelegate.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EC5DF3FA22921DA8006622C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CDA282292ADA0000BB706 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC5DF3FB22921DE9006622C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DF3FC22921E3F006622C4 /* UIViewController+Extension.swift */,
+				EC5DF40622922EC9006622C4 /* UIColor+Extension.swift */,
+				EC5DF40822923198006622C4 /* UIView+Extension.swift */,
+				EC5CDA2D2292B1F0000BB706 /* NSError+Extension.swift */,
+				4B442A1D229496DE00717371 /* UITableView+Extension.swift */,
+				4B442A222294AE0F00717371 /* Double+Extension.swift */,
+				EC5E80EC2294D939007CEDB9 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC5E80F4229500FC007CEDB9 /* Login Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EC5E80EE2294F174007CEDB9 /* LoginPresenterTests.swift */,
+			);
+			path = "Login Tests";
+			sourceTree = "<group>";
+		};
+		EC5E80F5229501A0007CEDB9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EC5E80F6229501E0007CEDB9 /* LoginModel.json */,
+				EC5A11512295F89000BC95E8 /* StatementWrapper.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		EC74956122937D420055574E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DF3ED229217A9006622C4 /* Login */,
+				EC74956222937DAD0055574E /* MainTable */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EC74956222937DAD0055574E /* MainTable */ = {
+			isa = PBXGroup;
+			children = (
+				EC7495832293996E0055574E /* Model */,
+				EC74957E229386530055574E /* Repository */,
+				EC7495772293847B0055574E /* Coordinator */,
+				EC74956722937F610055574E /* View */,
+				EC749576229383850055574E /* Presenter */,
+			);
+			path = MainTable;
+			sourceTree = "<group>";
+		};
+		EC74956722937F610055574E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B442A102294941D00717371 /* Cells */,
+				EC749574229381A30055574E /* MainTableViewDelegate.swift */,
+				EC74956322937E800055574E /* MainTableViewController.swift */,
+				EC74956422937E800055574E /* MainTableViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC749576229383850055574E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EC749570229381590055574E /* MainTablePresenter.swift */,
+				EC749572229381670055574E /* MainTablePresenterDelegate.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EC7495772293847B0055574E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EC7495792293849B0055574E /* MainTableCoordinator.swift */,
+				EC74957C229384AE0055574E /* MainTableCoordinatorDelegate.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EC74957E229386530055574E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				ECF24C6F2293A8930049E4A1 /* StatementWrapper.swift */,
+				EC74958622939C670055574E /* StatementRequest.swift */,
+				EC74957F229386650055574E /* MainTableRepository.swift */,
+				EC749581229386760055574E /* MainTableRepositoryDelegate.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EC7495832293996E0055574E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC7495842293997A0055574E /* StatementModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC5DF3C722921714006622C4 /* BankApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5DF3E522921715006622C4 /* Build configuration list for PBXNativeTarget "BankApp" */;
+			buildPhases = (
+				7C4D4ECABC4C24748EF265C9 /* [CP] Check Pods Manifest.lock */,
+				EC5DF3C422921714006622C4 /* Sources */,
+				EC5DF3C522921714006622C4 /* Frameworks */,
+				EC5DF3C622921714006622C4 /* Resources */,
+				9495E9D5C143ABAAF4D6ED5F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankApp;
+			productName = BankApp;
+			productReference = EC5DF3C822921714006622C4 /* BankApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC5DF3DB22921715006622C4 /* BankAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5DF3E822921715006622C4 /* Build configuration list for PBXNativeTarget "BankAppTests" */;
+			buildPhases = (
+				99E4F5B8D300844A45C82BCD /* [CP] Check Pods Manifest.lock */,
+				EC5DF3D822921715006622C4 /* Sources */,
+				EC5DF3D922921715006622C4 /* Frameworks */,
+				EC5DF3DA22921715006622C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC5DF3DE22921715006622C4 /* PBXTargetDependency */,
+			);
+			name = BankAppTests;
+			productName = BankAppTests;
+			productReference = EC5DF3DC22921715006622C4 /* BankAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC5DF3C022921714006622C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = pedrofveloso;
+				TargetAttributes = {
+					EC5DF3C722921714006622C4 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					EC5DF3DB22921715006622C4 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = EC5DF3C722921714006622C4;
+					};
+				};
+			};
+			buildConfigurationList = EC5DF3C322921714006622C4 /* Build configuration list for PBXProject "BankApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC5DF3BF22921714006622C4;
+			productRefGroup = EC5DF3C922921714006622C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC5DF3C722921714006622C4 /* BankApp */,
+				EC5DF3DB22921715006622C4 /* BankAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC5DF3C622921714006622C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC74956622937E800055574E /* MainTableViewController.xib in Resources */,
+				EC5DF3D622921715006622C4 /* LaunchScreen.storyboard in Resources */,
+				EC5DF3D322921715006622C4 /* Assets.xcassets in Resources */,
+				EC5DF3F622921D90006622C4 /* LoginViewController.xib in Resources */,
+				EC5E80EA2294C4A8007CEDB9 /* UserInfoTableViewCell.xib in Resources */,
+				4B442A1C2294949700717371 /* StatementItemTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5DF3DA22921715006622C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5E80F7229501E0007CEDB9 /* LoginModel.json in Resources */,
+				EC5A11522295F89000BC95E8 /* StatementWrapper.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C4D4ECABC4C24748EF265C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9495E9D5C143ABAAF4D6ED5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BankApp/Pods-BankApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BankApp/Pods-BankApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99E4F5B8D300844A45C82BCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC5DF3C422921714006622C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC749582229386760055574E /* MainTableRepositoryDelegate.swift in Sources */,
+				EC74957D229384AE0055574E /* MainTableCoordinatorDelegate.swift in Sources */,
+				4B442A1E229496DE00717371 /* UITableView+Extension.swift in Sources */,
+				EC5DF40922923198006622C4 /* UIView+Extension.swift in Sources */,
+				EC749580229386650055574E /* MainTableRepository.swift in Sources */,
+				EC5CDA232292ABCB000BB706 /* LoginRepository.swift in Sources */,
+				EC5CDA322292B53B000BB706 /* LoginRequest.swift in Sources */,
+				EC5CDA352292C219000BB706 /* KeychainHelper.swift in Sources */,
+				EC5CDA2C2292B040000BB706 /* Network.swift in Sources */,
+				EC5CDA302292B322000BB706 /* Requestable.swift in Sources */,
+				EC5CDA202292AB10000BB706 /* LoginCoordinatorDelegate.swift in Sources */,
+				EC5DF405229226E6006622C4 /* LoginViewDelegate.swift in Sources */,
+				EC5E80E92294C4A8007CEDB9 /* UserInfoTableViewCell.swift in Sources */,
+				4B442A202294A72E00717371 /* UserHelper.swift in Sources */,
+				EC5CDA252292ABD5000BB706 /* LoginRepositoryDelegate.swift in Sources */,
+				EC7495852293997A0055574E /* StatementModel.swift in Sources */,
+				EC749573229381670055574E /* MainTablePresenterDelegate.swift in Sources */,
+				ECF24C702293A8930049E4A1 /* StatementWrapper.swift in Sources */,
+				EC5DF3FF22922263006622C4 /* LoginCoordinator.swift in Sources */,
+				EC74958722939C670055574E /* StatementRequest.swift in Sources */,
+				EC5DF3F522921D90006622C4 /* LoginViewController.swift in Sources */,
+				EC749575229381A30055574E /* MainTableViewDelegate.swift in Sources */,
+				EC5DF401229225A9006622C4 /* LoginPresenter.swift in Sources */,
+				EC5DF403229225D1006622C4 /* LoginPresenterDelegate.swift in Sources */,
+				EC74956522937E800055574E /* MainTableViewController.swift in Sources */,
+				EC5DF3F022921855006622C4 /* AppCoordinator.swift in Sources */,
+				EC5CDA292292ADA0000BB706 /* LoginModel.swift in Sources */,
+				4B442A1B2294949700717371 /* StatementItemTableViewCell.swift in Sources */,
+				EC5DF3CC22921714006622C4 /* AppDelegate.swift in Sources */,
+				EC749571229381590055574E /* MainTablePresenter.swift in Sources */,
+				EC5DF3FD22921E3F006622C4 /* UIViewController+Extension.swift in Sources */,
+				EC5DF3F222921866006622C4 /* CoordinatorDelegate.swift in Sources */,
+				EC5DF40722922EC9006622C4 /* UIColor+Extension.swift in Sources */,
+				4B442A232294AE0F00717371 /* Double+Extension.swift in Sources */,
+				EC5E80ED2294D939007CEDB9 /* String+Extension.swift in Sources */,
+				EC74957A2293849B0055574E /* MainTableCoordinator.swift in Sources */,
+				EC5CDA2E2292B1F0000BB706 /* NSError+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5DF3D822921715006622C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5E80EF2294F174007CEDB9 /* LoginPresenterTests.swift in Sources */,
+				EC5A11502295ED8E00BC95E8 /* MainTableTests.swift in Sources */,
+				EC5E80F3229500F5007CEDB9 /* MockLoader.swift in Sources */,
+				EC5A11572296093500BC95E8 /* ExtensionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC5DF3DE22921715006622C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC5DF3C722921714006622C4 /* BankApp */;
+			targetProxy = EC5DF3DD22921715006622C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC5DF3D422921715006622C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5DF3D522921715006622C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC5DF3E322921715006622C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC5DF3E422921715006622C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC5DF3E622921715006622C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F5A31E6BDF521A3FC4043B4 /* Pods-BankApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XNN7BLCMG;
+				INFOPLIST_FILE = "$(SRCROOT)/BankApp/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrofveloso.BankApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC5DF3E722921715006622C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 203950FB1AC907BF70A2F699 /* Pods-BankApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XNN7BLCMG;
+				INFOPLIST_FILE = "$(SRCROOT)/BankApp/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrofveloso.BankApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC5DF3E922921715006622C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CEC9ECB32E5A01977B95140 /* Pods-BankAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BankAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrofveloso.BankAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankApp.app/BankApp";
+			};
+			name = Debug;
+		};
+		EC5DF3EA22921715006622C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B12F3DB69F833925D27C06B6 /* Pods-BankAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BankAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrofveloso.BankAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankApp.app/BankApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC5DF3C322921714006622C4 /* Build configuration list for PBXProject "BankApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5DF3E322921715006622C4 /* Debug */,
+				EC5DF3E422921715006622C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5DF3E522921715006622C4 /* Build configuration list for PBXNativeTarget "BankApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5DF3E622921715006622C4 /* Debug */,
+				EC5DF3E722921715006622C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5DF3E822921715006622C4 /* Build configuration list for PBXNativeTarget "BankAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5DF3E922921715006622C4 /* Debug */,
+				EC5DF3EA22921715006622C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC5DF3C022921714006622C4 /* Project object */;
+}
