@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-TesteSantanderTests/Pods-TesteSantanderTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/KIF/KIF.framework
+${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework
+${BUILT_PRODUCTS_DIR}/Quick/Quick.framework
+${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework
