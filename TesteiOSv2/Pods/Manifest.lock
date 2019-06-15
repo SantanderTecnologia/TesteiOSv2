@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.7.3)
+  - KeychainSwift (13.0.0)
+  - Nimble (7.3.1)
+  - Quick (1.3.2)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeychainSwift (~> 13.0)
+  - Nimble
+  - Quick
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - KeychainSwift
+    - Nimble
+    - Quick
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 2410fe262a80537beede19fba763152163fc0bea
+
+COCOAPODS: 1.5.3
