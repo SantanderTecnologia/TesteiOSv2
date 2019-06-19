@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Santander Teste iOS' do
+  use_frameworks!
+
+  # Pods for Santander Teste iOS
+   pod 'SnapKit', '~> 5.0.0'
+   pod 'Alamofire'
+   pod 'MaterialComponents/Cards'
+
+  target 'Santander Teste iOS Tests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
+  end
+end

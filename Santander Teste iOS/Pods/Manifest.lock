@@ -1,0 +1,54 @@
+PODS:
+  - Alamofire (4.8.2)
+  - MaterialComponents/AnimationTiming (85.0.0)
+  - MaterialComponents/Cards (85.0.0):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Icons/ic_check_circle
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+  - MaterialComponents/Ink (85.0.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Icons/Base (85.0.0)
+  - MaterialComponents/private/Icons/ic_check_circle (85.0.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Math (85.0.0)
+  - MaterialComponents/Ripple (85.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (85.0.0)
+  - MaterialComponents/ShadowLayer (85.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Shapes (85.0.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
+  - SnapKit (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - MaterialComponents/Cards
+  - Nimble
+  - Quick
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - MaterialComponents
+    - Nimble
+    - Quick
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  MaterialComponents: 9e545cf19802e6acf017fe774c90e36176ea7066
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+
+PODFILE CHECKSUM: 3b3cce22d8b6d73718107666919fb30e81e7cb0d
+
+COCOAPODS: 1.7.0.rc.2

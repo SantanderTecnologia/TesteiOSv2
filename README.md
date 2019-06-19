@@ -1,3 +1,14 @@
+# Lucas Conte Ferracioli
+
+### INSTALAÇÃO:
+O projeto foi desenvolvido utilizando CocoaPods, então é necessário o comando  `pod install` para instalação dos frameworks.
+
+### FRAMEWORKS:
+* Quick e Nimble: desenvolvimento de testes unitários.
+* SnapKit: desenvolvimento do AutoLayout programaticamente.
+* Alamofire: requições em protocolos HTTP na API.
+* Material Design Cards: utilizado no layout das células de tabelas.
+
 # Show me the code
 
 Esse repositório contem todo o material necessário para realizar o teste: 
