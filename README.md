@@ -36,6 +36,9 @@ Pedimos que trabalhe sozinho e não divulgue o resultado na internet.
 
 Faça um fork desse desse repositório em seu Github e ao finalizar nos envie um Pull Request com o resultado, por favor informe por qual empresa você esta se candidatando.
 
+Utilizei as Libs  Alamofire e SwiftJson 
+Abrir  o arquivo Santander.workspace. 
+
 # Importante: não há prazo de entrega, faça com qualidade!
 
 # BOA SORTE!
