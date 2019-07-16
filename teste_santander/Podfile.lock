@@ -1,0 +1,50 @@
+PODS:
+  - Alamofire (4.8.2)
+  - CPF-CNPJ-Validator (1.0.2)
+  - KeychainSwift (15.0.0)
+  - Nimble (8.0.0)
+  - ObjectMapper (3.4.1)
+  - Quick (1.3.4)
+  - RNActivityView (0.0.8)
+  - RNLoadingButton-Swift (5.1.0)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+
+DEPENDENCIES:
+  - Alamofire (= 4.8.2)
+  - CPF-CNPJ-Validator
+  - KeychainSwift (= 15.0.0)
+  - Nimble (= 8.0.0)
+  - ObjectMapper (= 3.4.1)
+  - Quick (= 1.3.4)
+  - RNActivityView
+  - RNLoadingButton-Swift
+  - SDWebImage (= 4.4.6)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CPF-CNPJ-Validator
+    - KeychainSwift
+    - Nimble
+    - ObjectMapper
+    - Quick
+    - RNActivityView
+    - RNLoadingButton-Swift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CPF-CNPJ-Validator: 0b08069595da2c4b20e964b743bfc0a7334d5347
+  KeychainSwift: c6fc018d287804faf1ce3f258a1e51a7178c8382
+  Nimble: a0e6f95b4b91a4f66b6da3512b6bebc07c9cbf49
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
+  Quick: f4f7f063c524394c73ed93ac70983c609805d481
+  RNActivityView: a47d2fd9ae790369dddc8d878bfea359135fceac
+  RNLoadingButton-Swift: 7e38fb4f395062b6902e70d29e6d42abe2e51e32
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+
+PODFILE CHECKSUM: b99d92b432e34ced7b1da90e57a47e0c770a3ad7
+
+COCOAPODS: 1.6.1

@@ -1,41 +1,45 @@
-# Show me the code
+# Desafio IOS
+Este projeto consiste Clean Architecture (VIPER)
 
-Esse repositório contem todo o material necessário para realizar o teste: 
-- A especificação do layout está na pasta 'bank_app_layout' abrindo o index.html, os icones estão na pasta 'assets'
+## O que é o Viper?
+Viper é um padrão de design que implementa o paradigma da 'separação de preocupação'. Principalmente como MVP ou MVC, segue uma abordagem modular. Um recurso, um módulo. Para cada módulo, o VIPER tem cinco (às vezes quatro) classes diferentes com papéis distintos. Nenhuma classe vai além de seu único propósito. Essas classes estão seguindo.
 
-- Os dados da Api estão mockados, os exemplos e a especificação dos serviços (login e statements) se encontram no arquivo BankApp.postman_collection.json ( é necessário instalar o postman e importar a colection https://www.getpostman.com/apps)
+* **View:** Classe que tem todo o código para mostrar a interface do aplicativo para o usuário e obter sua resposta. Ao receber a resposta, o View alerta o apresentador.
 
-![Image of Yaktocat](https://github.com/SantanderTecnologia/TesteiOSv2/blob/master/telas.png)
+* **Presenter :**  Núcleo de um módulo. Obtém a resposta do usuário do View e trabalha de acordo. Única classe para se comunicar com todos os outros componentes. Chama o roteador para wireframe, Interactor para buscar dados (chamadas de rede ou chamadas de dados locais), ver para atualizar a interface do usuário.
 
-### # DESAFIO:
+* **Interactor:**  tenha uma lógica de negócios de um aplicativo. Primeiramente, faça chamadas de API para buscar dados de uma fonte. Responsável por fazer chamadas de dados, mas não necessariamente de si mesmo.
 
-Na primeira tela teremos um formulario de login, o campo user deve aceitar email ou cpf,
-o campo password deve validar se a senha tem pelo menos uma letra maiuscula, um caracter especial e um caracter alfanumérico.
-Apos a validação, realizar o login no endpoint https://bank-app-test.herokuapp.com/api/login e exibir os dados de retorno na próxima tela.
-O ultimo usuário logado deve ser salvo de forma segura localmente, e exibido na tela de login se houver algum salvo. 
+* **WIREFRAME:**  faz o roteamento. Esculta o apresentador sobre qual tela apresentar e executa.
 
-Na segunda tela será exibido os dados formatados do retorno do login e será necessário fazer um segundo request para obter os lançamentos do usuário, no endpoint https://bank-app-test.herokuapp.com/api/statements/{idUser} que retornará uma lista de lançamentos
+* **Entidade:** Contém classes de modelo simples usadas pelo interator.
 
-### # Avaliação
+## Estrutura do Projeto
 
-Você será avaliado pela usabilidade, por respeitar o design e pela arquitetura do app. É esperado que você consiga explicar as decisões que tomou durante o desenvolvimento através de commits.
+```
+teste_santander/
+    |-> module/
+        |-> Home/
+            |-> User Interface/
+                |-> Presenter/
+                    HomePresenter.swfit
+                |-> View/
+                    HomeViewController.swfit
+                |-> Wireframe/
+                    HomeWireframe.swfit
+            |-> Application Logic/
+                |-> Protocol/
+                    HomeProtocol.swfit
+                |-> Manager/
+                    HomeManager.swfit
+                |-> View/
+                    HomeViewController.swfit
+                |-> Interactor/
+                    HomeInteractor.swfit
+    |-> Teste SantanderTests
+```
 
-Obrigatórios:
 
-* Swift 3.0 ou superior
-* Autolayout
-* O app deve funcionar no iOS 9
-* Testes unitários, pode usar a ferramenta que você tem mais experiência, só nos explique o que ele tem de bom.
-* Arquitetura a ser utilizada: Swift Clean ([https://clean-swift.com/handbook/](https://clean-swift.com/handbook/) && [https://github.com/Clean-Swift/CleanStore](https://github.com/Clean-Swift/CleanStore)
-* Uso do git.
-
-### # Observações gerais
-
-Adicione um arquivo [README.md](http://README.md) com os procedimentos para executar o projeto.
-Pedimos que trabalhe sozinho e não divulgue o resultado na internet.
-
-Faça um fork desse desse repositório em seu Github e ao finalizar nos envie um Pull Request com o resultado, por favor informe por qual empresa você esta se candidatando.
-
-# Importante: não há prazo de entrega, faça com qualidade!
-
-# BOA SORTE!
+* [Medium](https://medium.com/@smalam119/viper-design-pattern-for-ios-application-development-7a9703902af6) - VIPER Design Pattern in Swift for iOS Application Development.
+* [Equinocios](http://equinocios.com/viper/2017/03/14/comecando-com-viper/) - Começando com VIPER
+* [UBER](https://eng.uber.com/new-rider-app/) - UBER
