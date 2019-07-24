@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in LoginUserInteractor.fecthUser(_:):LoginUserInteractor.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LoginUserViewController.displayUser(_:):LoginUserViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LoginUserViewController.btnLoginClicked(_:):LoginUserViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "txfPassword.text!.validate().valid">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "StatementUserViewController.viewWillAppear(_:):StatementUserViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "router!.dataStore.user!.userId">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in UserCoreDataStore.createUser(_:completionHandler:):UserCoreDataStore.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "managedUser.user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginUserViewController.prepare(for:sender:):LoginUserViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "router.dataStore!">
+            </PersistentString>
+            <PersistentString
+               value = "router.responds(to: selector)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,1 @@
+Projeto em Swift 5 utilizar a versão 10.2 do Xcode para poder rodar o projeto.
