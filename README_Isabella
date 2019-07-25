@@ -1,0 +1,3 @@
+Para efetuar o login:
+	- campo user: aceita somente CPF validos ou em formato email ("a@a.com", por exemplo)
+	- campo senha: necessariamente precisa possuir um numero, um caracter especial e uma letra maiúscula para ser uma senha valida
