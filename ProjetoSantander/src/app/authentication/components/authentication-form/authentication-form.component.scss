@@ -1,0 +1,175 @@
+.main-authentication-form{
+    margin: 0 auto;
+    max-width: 37.5rem;
+    margin-top: 6.56rem;
+}
+.authentication-form-container{
+    padding: 0 1rem 0 1rem;
+    display: grid;
+}
+.authentication-form-container-child{
+    display: grid;
+}
+.main-authentication-action{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.authentication-input{
+    background: #FFFFFF;
+    border: 0;
+    height: 1.13rem;
+    color: #A8B4C4;
+    outline: none;
+    width: 100%;
+}
+
+.invalid-fild-alert{
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(243, 24, 24);
+    font-size: .8rem;
+    padding: .6rem 0 .6rem 0;
+}
+.invalid-input-alert{
+    border: 1px solid rgb(243, 24, 24)!important;
+}
+.welcome-authentication-box{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.welcome-authentication-box-controls{
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: .8rem;
+    margin: 1rem 0 1rem 0;
+}
+.button-link{
+    background: #FFFFFF;
+    border: 0;
+    outline: none;
+}
+.button-link:hover{
+    cursor: pointer;
+}
+.login-error-alert{
+    width: 100%;
+    text-align: center;
+}
+.authentication-input-wrapper{
+    display: block;
+    border: 1px solid #DCE2EE;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+.form-container-child{
+    margin-bottom: 1.31rem;
+}
+
+.valid-input-form-label{
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3B48EE;
+  font-weight: 600;
+  font-size: 12px;
+}
+.valid-input-form-label-error{
+  font-family: Helvetica, Arial, sans-serif;
+  color: #f31818;
+  font-weight: 600;
+  font-size: 12px;
+}
+.align-center-content{
+  margin: 0 auto;
+}
+
+.progressbar-wrapper{
+    max-width: 35rem;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Progress Bar */
+.progress {
+    position: relative;
+    height: 4px;
+    display: block;
+    width: 100%;
+    background-color: #9199ff;
+    border-radius: 2px;
+    background-clip: padding-box;
+    margin: 0.5rem 0 1rem 0;
+    overflow: hidden; }
+    .progress .determinate {
+      position: absolute;
+      background-color: inherit;
+      top: 0;
+      bottom: 0;
+      background-color: #3B48EE;
+      transition: width .3s linear; }
+    .progress .indeterminate {
+      background-color: #3B48EE; }
+      .progress .indeterminate:before {
+        content: '';
+        position: absolute;
+        background-color: inherit;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        will-change: left, right;
+        -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+                animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
+      .progress .indeterminate:after {
+        content: '';
+        position: absolute;
+        background-color: inherit;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        will-change: left, right;
+        -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+                animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+        -webkit-animation-delay: 1.15s;
+                animation-delay: 1.15s; }
+
+  @-webkit-keyframes indeterminate {
+    0% {
+      left: -35%;
+      right: 100%; }
+    60% {
+      left: 100%;
+      right: -90%; }
+    100% {
+      left: 100%;
+      right: -90%; } }
+  @keyframes indeterminate {
+    0% {
+      left: -35%;
+      right: 100%; }
+    60% {
+      left: 100%;
+      right: -90%; }
+    100% {
+      left: 100%;
+      right: -90%; } }
+  @-webkit-keyframes indeterminate-short {
+    0% {
+      left: -200%;
+      right: 100%; }
+    60% {
+      left: 107%;
+      right: -8%; }
+    100% {
+      left: 107%;
+      right: -8%; } }
+  @keyframes indeterminate-short {
+    0% {
+      left: -200%;
+      right: 100%; }
+    60% {
+      left: 107%;
+      right: -8%; }
+    100% {
+      left: 107%;
+      right: -8%; } }

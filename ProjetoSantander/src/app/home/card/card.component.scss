@@ -1,0 +1,30 @@
+.card-content{
+    padding: .56rem;
+}
+.card-content-grid{
+ display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+.content-grid-label{
+    color: #A8B4C4;
+    font-size: 1rem;
+}
+.content-grid-label-small{
+    color: #A8B4C4;
+    font-size: .75rem;
+}
+.right-text{
+    text-align: right;
+}
+.content-grid-content{
+    color: #485465;
+
+    font-size: 1rem;
+}
+.content-grid-content-big{
+    color: #485465;
+    font-size: 1.25rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.5rem;
+}

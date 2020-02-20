@@ -1,0 +1,51 @@
+<form [formGroup]="loginForm">
+    <section class="main-authentication-form">
+        <div class="authentication-form-container">
+
+            <ng-container *ngIf="storageAccount != null">
+                <div class="welcome-authentication-box">Olá {{storageAccount.userFullName}}, seja bem vindo novamente!</div>
+                <div class="welcome-authentication-box-controls">
+                    <button class="button-link" (click)="clearStorageAccount()">
+                        Entrar com outra conta!
+                    </button>
+
+                </div>
+            </ng-container>
+            <div class="authentication-form-container-child form-container-child" >
+
+                <div class="valid-input-form-label-error" *ngIf="bindInputUser == true && this.validCPF == false && this.validEmail == false">Você precisa informar um CPF ou um E-mail válido para prosseguir!</div>
+                <div class="valid-input-form-label" *ngIf="bindInputUser == true && this.validCPF == true">Fazendo Login com CPF</div>
+                <div class="valid-input-form-label" *ngIf="bindInputUser == true && this.validEmail == true">Fazendo Login com E-mail</div>
+
+                <div class="authentication-input-wrapper" [ngClass]="{'invalid-input-alert': submitted && this.loginForm.controls.username.errors}">
+                    <input (change)="checkEmailOrCPF()" formControlName="username" class="authentication-input" type="text" placeholder="E-mail ou CPF" aria-label="Nome de usuário ou CPF" name="usuario" autocomplete="off">
+                </div>
+                <div *ngIf="submitted && this.loginForm.controls.username.errors" class="invalid-fild-alert">
+                    <div *ngIf="this.loginForm.controls.username.errors.required">É necessário informar seu E-mail ou CPF para fazer login</div>
+                </div>
+            </div>
+            <div class="authentication-form-container-child">
+                <div class="authentication-input-wrapper" [ngClass]="{'invalid-input-alert': submitted && this.loginForm.controls.password.errors}">
+                    <input formControlName="password" class="authentication-input" type="password" placeholder="Senha" aria-label="Senha" name="senha" autocomplete="off" >
+                </div>
+                <div *ngIf="submitted && this.loginForm.controls.password.errors" class="invalid-fild-alert">
+                    <div *ngIf="this.loginForm.controls.password.errors.required || loginForm.get('password').hasError('pattern')">Informe sua senha segura, lembre-se, ela possui ao menos um número, uma letra maiúscula, uma letra minuscula e um caractere especial!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div *ngIf="submitted == true && errorLogin == true" class="invalid-fild-alert">
+        <div class="login-error-alert">Usuário ou senha inválidos!</div>
+    </div>
+    <div *ngIf="submitted == true && errorServer == true" class="invalid-fild-alert">
+        <div class="login-error-alert">Houve um erro ao tentar processar sua solicitação!</div>
+    </div>
+    <div class="progressbar-wrapper" *ngIf="showProgressbar">
+        <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+    </div>
+    <section class="main-authentication-action">
+      <lib-primary-button class="align-center-content" (click)='submitForm()' buttonText='Login'></lib-primary-button>
+    </section>
+</form>

@@ -1,0 +1,15 @@
+.primary-action-button{
+  background: #3B48EE;
+  box-shadow: 0 3px 6px 0 rgba(59,72,238,0.30);
+  border-radius: 4px;
+  width: 12.63rem;
+  height: 3.2rem;
+  border: .2rem;
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin: 0 auto;
+  outline: none;
+}
+.primary-action-button:active{
+  background: rgb(37, 49, 214);
+}

@@ -1,0 +1,35 @@
+<div class="main-container">
+
+    <header>
+        <div class="header-center-content">
+            <div class="card-double-column">
+                <div class="card-simple-column">{{userService.userAccount.name}}</div>
+                <input class="button-image" type="image" src="../../assets/icons/exit-icon.png" alt="Saír" (click)="exit()">
+            </div>
+        </div>
+    </header>
+    
+    <section class="main-container-big-card">
+        <div class="big-card-content">
+            <div class="card-simple-column">
+                <div class="card-simple-label">Conta</div>
+                <div>{{userService.userAccount.bankAccount}}/{{userService.userAccount.agency | formatAccountNumber}}</div>
+            </div>
+            <div class="card-simple-column">
+                <div class="card-simple-label">Saldo</div>
+                <div>{{userService.userAccount.balance | currency :'BRL'}}</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-card-data">
+        <div class="container-card-data-content">
+            <div class="container-card-title">Recentes</div>
+            <div class="card-grid">
+                <div class="card-container" *ngFor="let statement of statementArr">
+                    <app-card [statement]="statement"></app-card>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

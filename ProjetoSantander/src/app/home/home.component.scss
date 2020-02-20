@@ -1,0 +1,79 @@
+$content-max-width: 37.5rem;
+$primary-color:#3B49EE;
+
+.main-container-big-card{
+    background: $primary-color;
+    padding: 1.13rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.card-double-column{
+    display: flex;
+}
+.card-simple-column{
+    font-size: 1.56rem;
+    color: #FFFFFF;
+    letter-spacing: 0.03rem;
+    line-height: 1.88rem;
+    width: 100%;
+}
+
+.card-simple-label{
+    font-size: .75rem;
+    color: #FFFFFF;
+    letter-spacing: 0.03rem;
+    line-height: .88rem;
+}
+.big-card-content{
+    margin: 0 auto;
+    width: 100%;
+    max-width: $content-max-width;
+    display: grid;
+    grid-row-gap: 1.31rem;
+}
+.button-image{
+    width: 1.69rem;
+    height: 1.69rem;
+    outline: none;
+}
+.container-card-data{
+    width: 100%;
+}
+.container-card-title{
+    color: #485465;
+    font-size: 1.06rem;
+    letter-spacing: 0rem;
+    line-height: 1.25rem;
+    padding: 0.88rem 1.13rem 0 1.13rem;
+}
+.container-card-data-content{
+    color: #485465;
+    margin: 0 auto;
+    max-width: $content-max-width;
+    letter-spacing: 0rem;
+    line-height: 1.25rem;
+     font-family: Helvetica, Arial, sans-serif;
+}
+.card-container{
+    background: #FFFFFF;
+    border: 1px solid rgba(219,223,227,0.30);
+    box-shadow: 0 5px 12px 0 rgba(217,226,233,0.50);
+    border-radius: 6px;
+    min-height: 4.8759rem;
+}
+.card-grid{
+    padding: 1rem;
+   display: grid;
+   grid-row-gap: 1.31rem;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: $primary-color;
+}
+.header-center-content{
+    max-width: $content-max-width;
+    margin: 0 auto;
+    padding: 1.13rem;
+    font-family: Helvetica, Arial, sans-serif;
+}

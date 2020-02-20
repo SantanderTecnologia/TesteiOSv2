@@ -1,0 +1,8 @@
+<div class="card-content">
+    <div class="card-content-grid">
+        <div class="content-grid-label">Pagamento</div>
+        <div class="content-grid-label-small right-text">{{statement.date | date: 'dd/MM/yyyy'}}</div>
+        <div class="content-grid-content">{{statement.desc}}</div>
+        <div class="content-grid-content-big right-text">{{statement.value | currency :'BRL'}}</div>
+    </div>
+</div>
