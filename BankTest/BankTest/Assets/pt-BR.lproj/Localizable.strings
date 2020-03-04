@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  BankTest
+
+  Created by Luan Nascimento Almeida on 03/03/20.
+  Copyright © 2020 bank. All rights reserved.
+*/
+
+"INVALID_USER" = "Você precisa informar um e-mail ou CPF válido";
+"INVALID_PASSWORD" = "O campo senha deve ter pelo menos: \n\n - Uma letra maiuscula;\n - um caracter especial;\n e um caracter alfanumérico.";
+"RECENT" = "Recents";

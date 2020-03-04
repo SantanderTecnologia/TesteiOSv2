@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  BankTest
+
+  Created by Luan Nascimento Almeida on 03/03/20.
+  Copyright © 2020 bank. All rights reserved.
+*/
+
+"INVALID_USER" = "Please, you must to enter a valid email address or a valid document identity ( CPF )";
+"INVALID_PASSWORD" = "The field password must be: \n\n - One uppercase letter;\n - One special character;\n - One alphanumeric character.";
+"RECENT" = "Recentes";

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="BankTest" customModuleProvider="target">
+            <connections>
+                <outlet property="passwordTextField" destination="zjV-Vr-sBf" id="jvM-6s-pAP"/>
+                <outlet property="userTextField" destination="NVD-ww-FeM" id="5G4-D5-6aH"/>
+                <outlet property="view" destination="iN0-l3-epB" id="tF3-CE-f95"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utf-Ic-zM1" customClass="BTButton" customModule="BankTest" customModuleProvider="target">
+                    <rect key="frame" x="107" y="626" width="200" height="60"/>
+                    <color key="backgroundColor" red="0.24286335710000001" green="0.28258669380000001" blue="0.89809083940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Bzl-fw-ckM"/>
+                        <constraint firstAttribute="height" constant="60" id="RSm-YX-sVS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="performLogin" destination="-1" eventType="touchUpInside" id="kkW-xa-Xp8"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yFy-M4-A4e">
+                    <rect key="frame" x="20" y="258" width="374" height="120"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuário" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NVD-ww-FeM" customClass="BTTextField" customModule="BankTest" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="YOq-h1-eFz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="showBorder" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="qJX-vH-q6e"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zjV-Vr-sBf" customClass="BTTextField" customModule="BankTest" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="70" width="374" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="jO4-Wg-huB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="showBorder" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="hh0-Z0-9wj"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="jyN-FT-83E">
+                    <rect key="frame" x="144.66666666666666" y="50" width="124.99999999999997" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="8TU-mH-7eJ"/>
+                        <constraint firstAttribute="width" constant="125" id="OmI-8A-jaD"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jyN-FT-83E" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="0YW-M4-Xqk"/>
+                <constraint firstItem="utf-Ic-zM1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Cbi-OJ-cun"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yFy-M4-A4e" secondAttribute="trailing" constant="20" id="Dpi-rJ-5nf"/>
+                <constraint firstItem="yFy-M4-A4e" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Exy-pb-eDx"/>
+                <constraint firstItem="jyN-FT-83E" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XQk-nd-8pj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="utf-Ic-zM1" secondAttribute="bottom" constant="50" id="Zj9-de-VrF"/>
+                <constraint firstItem="yFy-M4-A4e" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="sJb-4S-UaP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-223" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="125" height="70"/>
+    </resources>
+</document>
