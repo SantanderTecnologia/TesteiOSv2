@@ -1,0 +1,6 @@
+target 'TesteiOSv2' do
+  use_frameworks!
+  pod 'Alamofire', '~> 5.0'
+  pod 'JGProgressHUD'
+end
+

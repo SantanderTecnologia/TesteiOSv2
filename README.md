@@ -1,3 +1,9 @@
+# Como rodar o projeto
+
+- Entrar na pasta /TesteiOSv2/TesteiOSv2 
+- Rodar o comando: pod install
+
+
 # Show me the code
 
 Esse repositório contem todo o material necessário para realizar o teste: 
