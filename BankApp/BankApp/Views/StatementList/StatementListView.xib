@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatementListView" customModule="BankApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="pt7-QV-ZgZ"/>
+                <outlet property="statementsTableView" destination="sSv-Uh-XEc" id="Ezr-n7-x59"/>
+                <outlet property="userDataView" destination="dae-1N-RIr" id="P1S-Im-0tg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dae-1N-RIr" userLabel="User Data" customClass="UserDataView" customModule="BankApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="232"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="232" id="vDl-Zi-3Rj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfM-Pl-hDQ" userLabel="Statement List Container">
+                    <rect key="frame" x="0.0" y="276" width="414" height="620"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="101" estimatedRowHeight="-1" sectionHeaderHeight="42" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="sSv-Uh-XEc">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="iBB-g9-gnd"/>
+                                <outlet property="delegate" destination="-1" id="vU8-vU-bEj"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="sSv-Uh-XEc" firstAttribute="leading" secondItem="tfM-Pl-hDQ" secondAttribute="leading" id="9Zk-sj-jun"/>
+                        <constraint firstAttribute="bottom" secondItem="sSv-Uh-XEc" secondAttribute="bottom" id="Pdf-QP-8d3"/>
+                        <constraint firstItem="sSv-Uh-XEc" firstAttribute="top" secondItem="tfM-Pl-hDQ" secondAttribute="top" id="Wcz-4g-gmg"/>
+                        <constraint firstAttribute="trailing" secondItem="sSv-Uh-XEc" secondAttribute="trailing" id="tD6-sP-EQw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.23137254901960785" green="0.28627450980392155" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dae-1N-RIr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ZXJ-TI-4p4"/>
+                <constraint firstItem="dae-1N-RIr" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="eil-KT-OpE"/>
+                <constraint firstItem="tfM-Pl-hDQ" firstAttribute="top" secondItem="dae-1N-RIr" secondAttribute="bottom" id="qnl-bu-hce"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tfM-Pl-hDQ" secondAttribute="trailing" id="rZt-uK-rvE"/>
+                <constraint firstAttribute="bottom" secondItem="tfM-Pl-hDQ" secondAttribute="bottom" id="ruo-UC-h3w"/>
+                <constraint firstItem="tfM-Pl-hDQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="stX-Yx-pYK"/>
+                <constraint firstItem="dae-1N-RIr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="x5i-wO-BFH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,8 @@
+author: [YOUR NAME]
+author_url: [TWITTER_URL]
+github_url: [GIT_URL]
+root_url: [DOCUMENTATION_REPOSITORY_URL]
+module: [PROJECT_NAME]
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, '[PROJECT].xcworkspace', -scheme, '[PROJECT_SCHEME]']
