@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		249A9AA84E3F8AC1871C4F53 /* Pods_TataSantanderBankTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B0EE854FA40C59AEA11413 /* Pods_TataSantanderBankTest.framework */; };
+		2F20D6962456C5EA00C65B30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6952456C5EA00C65B30 /* AppDelegate.swift */; };
+		2F20D6982456C5EA00C65B30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6972456C5EA00C65B30 /* SceneDelegate.swift */; };
+		2F20D69A2456C5EA00C65B30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6992456C5EA00C65B30 /* ViewController.swift */; };
+		2F20D69D2456C5EA00C65B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F20D69B2456C5EA00C65B30 /* Main.storyboard */; };
+		2F20D69F2456C5F100C65B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F20D69E2456C5F100C65B30 /* Assets.xcassets */; };
+		2F20D6A22456C5F100C65B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F20D6A02456C5F100C65B30 /* LaunchScreen.storyboard */; };
+		2F20D6AD2456C5F200C65B30 /* TataSantanderBankTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6AC2456C5F200C65B30 /* TataSantanderBankTestTests.swift */; };
+		2F20D6BE2456CCB600C65B30 /* Application+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6B82456CCB600C65B30 /* Application+Extension.swift */; };
+		2F20D6BF2456CCB600C65B30 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6B92456CCB600C65B30 /* TextField+Extension.swift */; };
+		2F20D6C02456CCB600C65B30 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6BA2456CCB600C65B30 /* KeychainWrapper.swift */; };
+		2F20D6C12456CCB600C65B30 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6BB2456CCB600C65B30 /* String+Extension.swift */; };
+		2F20D6C22456CCB600C65B30 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6BC2456CCB600C65B30 /* Float+Extension.swift */; };
+		2F20D6C32456CCB600C65B30 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6BD2456CCB600C65B30 /* KeychainItemAccessibility.swift */; };
+		2F20D6CD2456CDDB00C65B30 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6C72456CDDB00C65B30 /* LoginPresenter.swift */; };
+		2F20D6CE2456CDDB00C65B30 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6C72456CDDB00C65B30 /* LoginPresenter.swift */; };
+		2F20D6CF2456CDDB00C65B30 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6C82456CDDB00C65B30 /* LoginWorker.swift */; };
+		2F20D6D02456CDDB00C65B30 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6C82456CDDB00C65B30 /* LoginWorker.swift */; };
+		2F20D6D12456CDDB00C65B30 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6C92456CDDB00C65B30 /* LoginRouter.swift */; };
+		2F20D6D22456CDDB00C65B30 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6C92456CDDB00C65B30 /* LoginRouter.swift */; };
+		2F20D6D32456CDDB00C65B30 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6CA2456CDDB00C65B30 /* LoginModels.swift */; };
+		2F20D6D42456CDDB00C65B30 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6CA2456CDDB00C65B30 /* LoginModels.swift */; };
+		2F20D6D52456CDDB00C65B30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6CB2456CDDB00C65B30 /* LoginViewController.swift */; };
+		2F20D6D62456CDDB00C65B30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6CB2456CDDB00C65B30 /* LoginViewController.swift */; };
+		2F20D6D72456CDDB00C65B30 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6CC2456CDDB00C65B30 /* LoginInteractor.swift */; };
+		2F20D6D82456CDDB00C65B30 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6CC2456CDDB00C65B30 /* LoginInteractor.swift */; };
+		2F20D6DF2456CDF100C65B30 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6D92456CDF100C65B30 /* HomePresenter.swift */; };
+		2F20D6E02456CDF100C65B30 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6D92456CDF100C65B30 /* HomePresenter.swift */; };
+		2F20D6E12456CDF100C65B30 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6DA2456CDF100C65B30 /* HomeWorker.swift */; };
+		2F20D6E22456CDF100C65B30 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6DA2456CDF100C65B30 /* HomeWorker.swift */; };
+		2F20D6E32456CDF100C65B30 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6DB2456CDF100C65B30 /* HomeRouter.swift */; };
+		2F20D6E42456CDF100C65B30 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6DB2456CDF100C65B30 /* HomeRouter.swift */; };
+		2F20D6E52456CDF100C65B30 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6DC2456CDF100C65B30 /* HomeModels.swift */; };
+		2F20D6E62456CDF100C65B30 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6DC2456CDF100C65B30 /* HomeModels.swift */; };
+		2F20D6E72456CDF100C65B30 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6DD2456CDF100C65B30 /* HomeViewController.swift */; };
+		2F20D6E82456CDF100C65B30 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6DD2456CDF100C65B30 /* HomeViewController.swift */; };
+		2F20D6E92456CDF100C65B30 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6DE2456CDF100C65B30 /* HomeInteractor.swift */; };
+		2F20D6EA2456CDF100C65B30 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6DE2456CDF100C65B30 /* HomeInteractor.swift */; };
+		2F20D6F02456CEF300C65B30 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6EE2456CEF300C65B30 /* LoginResponse.swift */; };
+		2F20D6F12456CEF300C65B30 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6EE2456CEF300C65B30 /* LoginResponse.swift */; };
+		2F20D6F22456CEF300C65B30 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6EF2456CEF300C65B30 /* Error.swift */; };
+		2F20D6F32456CEF300C65B30 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6EF2456CEF300C65B30 /* Error.swift */; };
+		2F20D6F62456CF3000C65B30 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6F42456CF3000C65B30 /* UserService.swift */; };
+		2F20D6F72456CF3000C65B30 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6F42456CF3000C65B30 /* UserService.swift */; };
+		2F20D6F82456CF3000C65B30 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6F52456CF3000C65B30 /* API.swift */; };
+		2F20D6F92456CF3000C65B30 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6F52456CF3000C65B30 /* API.swift */; };
+		2F20D6FB2456CF4200C65B30 /* UserWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6FA2456CF4200C65B30 /* UserWorker.swift */; };
+		2F20D6FC2456CF4200C65B30 /* UserWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6FA2456CF4200C65B30 /* UserWorker.swift */; };
+		2F20D7052456D07D00C65B30 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7002456D07C00C65B30 /* LoginInteractorTests.swift */; };
+		2F20D7072456D07D00C65B30 /* LoginWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7012456D07C00C65B30 /* LoginWorkerTests.swift */; };
+		2F20D7092456D07D00C65B30 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7022456D07C00C65B30 /* LoginViewControllerTests.swift */; };
+		2F20D70B2456D07D00C65B30 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7032456D07C00C65B30 /* LoginPresenterTests.swift */; };
+		2F20D70D2456D08B00C65B30 /* UserServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D70C2456D08B00C65B30 /* UserServiceMock.swift */; };
+		2F20D70E2456D08B00C65B30 /* UserServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D70C2456D08B00C65B30 /* UserServiceMock.swift */; };
+		2F20D7102456D14E00C65B30 /* HomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D70F2456D14E00C65B30 /* HomeResponse.swift */; };
+		2F20D7112456D14E00C65B30 /* HomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D70F2456D14E00C65B30 /* HomeResponse.swift */; };
+		2F20D7132456D15D00C65B30 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7122456D15D00C65B30 /* HomeService.swift */; };
+		2F20D7142456D15D00C65B30 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7122456D15D00C65B30 /* HomeService.swift */; };
+		2F20D7162456D16A00C65B30 /* StatementsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7152456D16A00C65B30 /* StatementsWorker.swift */; };
+		2F20D7172456D16A00C65B30 /* StatementsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7152456D16A00C65B30 /* StatementsWorker.swift */; };
+		2F20D7192456D2D200C65B30 /* StatementItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7182456D2D200C65B30 /* StatementItemTableViewCell.swift */; };
+		2F20D71A2456D2D200C65B30 /* StatementItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7182456D2D200C65B30 /* StatementItemTableViewCell.swift */; };
+		2F20D71C2456D3E900C65B30 /* HomeServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D71B2456D3E900C65B30 /* HomeServiceMock.swift */; };
+		2F20D71D2456D3E900C65B30 /* HomeServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D71B2456D3E900C65B30 /* HomeServiceMock.swift */; };
+		2F20D7242456D3FF00C65B30 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D71F2456D3FF00C65B30 /* HomeViewControllerTests.swift */; };
+		2F20D7262456D3FF00C65B30 /* HomeWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7202456D3FF00C65B30 /* HomeWorkerTests.swift */; };
+		2F20D7282456D3FF00C65B30 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7212456D3FF00C65B30 /* HomePresenterTests.swift */; };
+		2F20D72A2456D3FF00C65B30 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D7222456D3FF00C65B30 /* HomeInteractorTests.swift */; };
+		2F20D72B2456D4CE00C65B30 /* Application+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6B82456CCB600C65B30 /* Application+Extension.swift */; };
+		2F20D72C2456D4CE00C65B30 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6B92456CCB600C65B30 /* TextField+Extension.swift */; };
+		2F20D72D2456D4CE00C65B30 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6BB2456CCB600C65B30 /* String+Extension.swift */; };
+		2F20D72E2456D4CE00C65B30 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6BC2456CCB600C65B30 /* Float+Extension.swift */; };
+		2F20D72F2456D50000C65B30 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6BA2456CCB600C65B30 /* KeychainWrapper.swift */; };
+		2F20D7302456D50000C65B30 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D6BD2456CCB600C65B30 /* KeychainItemAccessibility.swift */; };
+		2F20D7312456D5A100C65B30 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 2F20D69B2456C5EA00C65B30 /* Main.storyboard */; };
+		78455FBCAE5CBD584138D282 /* Pods_TataSantanderBankTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20C1FFAA87D29732C77A2C1 /* Pods_TataSantanderBankTestTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F20D6A92456C5F200C65B30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F20D68A2456C5EA00C65B30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F20D6912456C5EA00C65B30;
+			remoteInfo = TataSantanderBankTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1130D9A655BCE9461ECC9D54 /* Pods-TataSantanderBankTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TataSantanderBankTest.release.xcconfig"; path = "Target Support Files/Pods-TataSantanderBankTest/Pods-TataSantanderBankTest.release.xcconfig"; sourceTree = "<group>"; };
+		2F20D6922456C5EA00C65B30 /* TataSantanderBankTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TataSantanderBankTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F20D6952456C5EA00C65B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F20D6972456C5EA00C65B30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2F20D6992456C5EA00C65B30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F20D69C2456C5EA00C65B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F20D69E2456C5F100C65B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F20D6A12456C5F100C65B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F20D6A32456C5F100C65B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F20D6A82456C5F200C65B30 /* TataSantanderBankTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TataSantanderBankTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F20D6AC2456C5F200C65B30 /* TataSantanderBankTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TataSantanderBankTestTests.swift; sourceTree = "<group>"; };
+		2F20D6AE2456C5F200C65B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F20D6B82456CCB600C65B30 /* Application+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+Extension.swift"; sourceTree = "<group>"; };
+		2F20D6B92456CCB600C65B30 /* TextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
+		2F20D6BA2456CCB600C65B30 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		2F20D6BB2456CCB600C65B30 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		2F20D6BC2456CCB600C65B30 /* Float+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
+		2F20D6BD2456CCB600C65B30 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		2F20D6C72456CDDB00C65B30 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		2F20D6C82456CDDB00C65B30 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		2F20D6C92456CDDB00C65B30 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		2F20D6CA2456CDDB00C65B30 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		2F20D6CB2456CDDB00C65B30 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2F20D6CC2456CDDB00C65B30 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		2F20D6D92456CDF100C65B30 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		2F20D6DA2456CDF100C65B30 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		2F20D6DB2456CDF100C65B30 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		2F20D6DC2456CDF100C65B30 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		2F20D6DD2456CDF100C65B30 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2F20D6DE2456CDF100C65B30 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		2F20D6EE2456CEF300C65B30 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		2F20D6EF2456CEF300C65B30 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		2F20D6F42456CF3000C65B30 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		2F20D6F52456CF3000C65B30 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2F20D6FA2456CF4200C65B30 /* UserWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWorker.swift; sourceTree = "<group>"; };
+		2F20D7002456D07C00C65B30 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		2F20D7012456D07C00C65B30 /* LoginWorkerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWorkerTests.swift; sourceTree = "<group>"; };
+		2F20D7022456D07C00C65B30 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		2F20D7032456D07C00C65B30 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		2F20D70C2456D08B00C65B30 /* UserServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServiceMock.swift; sourceTree = "<group>"; };
+		2F20D70F2456D14E00C65B30 /* HomeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeResponse.swift; sourceTree = "<group>"; };
+		2F20D7122456D15D00C65B30 /* HomeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		2F20D7152456D16A00C65B30 /* StatementsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatementsWorker.swift; sourceTree = "<group>"; };
+		2F20D7182456D2D200C65B30 /* StatementItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatementItemTableViewCell.swift; sourceTree = "<group>"; };
+		2F20D71B2456D3E900C65B30 /* HomeServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeServiceMock.swift; sourceTree = "<group>"; };
+		2F20D71F2456D3FF00C65B30 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		2F20D7202456D3FF00C65B30 /* HomeWorkerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorkerTests.swift; sourceTree = "<group>"; };
+		2F20D7212456D3FF00C65B30 /* HomePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		2F20D7222456D3FF00C65B30 /* HomeInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		976B845E29D72BA0DD15EF33 /* Pods-TataSantanderBankTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TataSantanderBankTestTests.debug.xcconfig"; path = "Target Support Files/Pods-TataSantanderBankTestTests/Pods-TataSantanderBankTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FF4193BAEE76D0B3056400E /* Pods-TataSantanderBankTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TataSantanderBankTestTests.release.xcconfig"; path = "Target Support Files/Pods-TataSantanderBankTestTests/Pods-TataSantanderBankTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		E20C1FFAA87D29732C77A2C1 /* Pods_TataSantanderBankTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TataSantanderBankTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B0EE854FA40C59AEA11413 /* Pods_TataSantanderBankTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TataSantanderBankTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE9DD550F1C552F96145A25D /* Pods-TataSantanderBankTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TataSantanderBankTest.debug.xcconfig"; path = "Target Support Files/Pods-TataSantanderBankTest/Pods-TataSantanderBankTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F20D68F2456C5EA00C65B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249A9AA84E3F8AC1871C4F53 /* Pods_TataSantanderBankTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F20D6A52456C5F200C65B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78455FBCAE5CBD584138D282 /* Pods_TataSantanderBankTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		215C8FD41E07E18D0DF4387B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7B0EE854FA40C59AEA11413 /* Pods_TataSantanderBankTest.framework */,
+				E20C1FFAA87D29732C77A2C1 /* Pods_TataSantanderBankTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F20D6892456C5EA00C65B30 = {
+			isa = PBXGroup;
+			children = (
+				2F20D6942456C5EA00C65B30 /* TataSantanderBankTest */,
+				2F20D6AB2456C5F200C65B30 /* TataSantanderBankTestTests */,
+				2F20D6932456C5EA00C65B30 /* Products */,
+				A7C5C0B4571BEFE8DFFE36F9 /* Pods */,
+				215C8FD41E07E18D0DF4387B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F20D6932456C5EA00C65B30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D6922456C5EA00C65B30 /* TataSantanderBankTest.app */,
+				2F20D6A82456C5F200C65B30 /* TataSantanderBankTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F20D6942456C5EA00C65B30 /* TataSantanderBankTest */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D6ED2456CECF00C65B30 /* Workers */,
+				2F20D6EC2456CEB800C65B30 /* Services */,
+				2F20D6EB2456CEB200C65B30 /* Models */,
+				2F20D6C42456CD4D00C65B30 /* Scenes */,
+				2F20D6B72456CCB600C65B30 /* Common */,
+				2F20D6952456C5EA00C65B30 /* AppDelegate.swift */,
+				2F20D6972456C5EA00C65B30 /* SceneDelegate.swift */,
+				2F20D6992456C5EA00C65B30 /* ViewController.swift */,
+				2F20D69B2456C5EA00C65B30 /* Main.storyboard */,
+				2F20D69E2456C5F100C65B30 /* Assets.xcassets */,
+				2F20D6A02456C5F100C65B30 /* LaunchScreen.storyboard */,
+				2F20D6A32456C5F100C65B30 /* Info.plist */,
+			);
+			path = TataSantanderBankTest;
+			sourceTree = "<group>";
+		};
+		2F20D6AB2456C5F200C65B30 /* TataSantanderBankTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D6FE2456D05A00C65B30 /* Mocks */,
+				2F20D6FD2456D04D00C65B30 /* Scenes */,
+				2F20D6AC2456C5F200C65B30 /* TataSantanderBankTestTests.swift */,
+				2F20D6AE2456C5F200C65B30 /* Info.plist */,
+			);
+			path = TataSantanderBankTestTests;
+			sourceTree = "<group>";
+		};
+		2F20D6B72456CCB600C65B30 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D6B82456CCB600C65B30 /* Application+Extension.swift */,
+				2F20D6B92456CCB600C65B30 /* TextField+Extension.swift */,
+				2F20D6BA2456CCB600C65B30 /* KeychainWrapper.swift */,
+				2F20D6BB2456CCB600C65B30 /* String+Extension.swift */,
+				2F20D6BC2456CCB600C65B30 /* Float+Extension.swift */,
+				2F20D6BD2456CCB600C65B30 /* KeychainItemAccessibility.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2F20D6C42456CD4D00C65B30 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D6C62456CD7200C65B30 /* Home */,
+				2F20D6C52456CD6700C65B30 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2F20D6C52456CD6700C65B30 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D6C72456CDDB00C65B30 /* LoginPresenter.swift */,
+				2F20D6C82456CDDB00C65B30 /* LoginWorker.swift */,
+				2F20D6C92456CDDB00C65B30 /* LoginRouter.swift */,
+				2F20D6CA2456CDDB00C65B30 /* LoginModels.swift */,
+				2F20D6CB2456CDDB00C65B30 /* LoginViewController.swift */,
+				2F20D6CC2456CDDB00C65B30 /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F20D6C62456CD7200C65B30 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D6D92456CDF100C65B30 /* HomePresenter.swift */,
+				2F20D6DA2456CDF100C65B30 /* HomeWorker.swift */,
+				2F20D6DB2456CDF100C65B30 /* HomeRouter.swift */,
+				2F20D6DC2456CDF100C65B30 /* HomeModels.swift */,
+				2F20D6DD2456CDF100C65B30 /* HomeViewController.swift */,
+				2F20D6DE2456CDF100C65B30 /* HomeInteractor.swift */,
+				2F20D7182456D2D200C65B30 /* StatementItemTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2F20D6EB2456CEB200C65B30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D6EF2456CEF300C65B30 /* Error.swift */,
+				2F20D6EE2456CEF300C65B30 /* LoginResponse.swift */,
+				2F20D70F2456D14E00C65B30 /* HomeResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F20D6EC2456CEB800C65B30 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D6F52456CF3000C65B30 /* API.swift */,
+				2F20D6F42456CF3000C65B30 /* UserService.swift */,
+				2F20D7122456D15D00C65B30 /* HomeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2F20D6ED2456CECF00C65B30 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D6FA2456CF4200C65B30 /* UserWorker.swift */,
+				2F20D7152456D16A00C65B30 /* StatementsWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		2F20D6FD2456D04D00C65B30 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D71E2456D3F200C65B30 /* Home */,
+				2F20D6FF2456D06B00C65B30 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2F20D6FE2456D05A00C65B30 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D71B2456D3E900C65B30 /* HomeServiceMock.swift */,
+				2F20D70C2456D08B00C65B30 /* UserServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2F20D6FF2456D06B00C65B30 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D7002456D07C00C65B30 /* LoginInteractorTests.swift */,
+				2F20D7032456D07C00C65B30 /* LoginPresenterTests.swift */,
+				2F20D7022456D07C00C65B30 /* LoginViewControllerTests.swift */,
+				2F20D7012456D07C00C65B30 /* LoginWorkerTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F20D71E2456D3F200C65B30 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2F20D7222456D3FF00C65B30 /* HomeInteractorTests.swift */,
+				2F20D7212456D3FF00C65B30 /* HomePresenterTests.swift */,
+				2F20D71F2456D3FF00C65B30 /* HomeViewControllerTests.swift */,
+				2F20D7202456D3FF00C65B30 /* HomeWorkerTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A7C5C0B4571BEFE8DFFE36F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE9DD550F1C552F96145A25D /* Pods-TataSantanderBankTest.debug.xcconfig */,
+				1130D9A655BCE9461ECC9D54 /* Pods-TataSantanderBankTest.release.xcconfig */,
+				976B845E29D72BA0DD15EF33 /* Pods-TataSantanderBankTestTests.debug.xcconfig */,
+				9FF4193BAEE76D0B3056400E /* Pods-TataSantanderBankTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F20D6912456C5EA00C65B30 /* TataSantanderBankTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F20D6B12456C5F200C65B30 /* Build configuration list for PBXNativeTarget "TataSantanderBankTest" */;
+			buildPhases = (
+				AFFEB17ACB775D5401463096 /* [CP] Check Pods Manifest.lock */,
+				2F20D68E2456C5EA00C65B30 /* Sources */,
+				2F20D68F2456C5EA00C65B30 /* Frameworks */,
+				2F20D6902456C5EA00C65B30 /* Resources */,
+				6BFCB2DCDDEE78FD9B309EB9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TataSantanderBankTest;
+			productName = TataSantanderBankTest;
+			productReference = 2F20D6922456C5EA00C65B30 /* TataSantanderBankTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F20D6A72456C5F200C65B30 /* TataSantanderBankTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F20D6B42456C5F200C65B30 /* Build configuration list for PBXNativeTarget "TataSantanderBankTestTests" */;
+			buildPhases = (
+				A9B5E3F42EF5D0E98E7031F5 /* [CP] Check Pods Manifest.lock */,
+				2F20D6A42456C5F200C65B30 /* Sources */,
+				2F20D6A52456C5F200C65B30 /* Frameworks */,
+				2F20D6A62456C5F200C65B30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F20D6AA2456C5F200C65B30 /* PBXTargetDependency */,
+			);
+			name = TataSantanderBankTestTests;
+			productName = TataSantanderBankTestTests;
+			productReference = 2F20D6A82456C5F200C65B30 /* TataSantanderBankTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F20D68A2456C5EA00C65B30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = TataSantanderBankTest;
+				TargetAttributes = {
+					2F20D6912456C5EA00C65B30 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					2F20D6A72456C5F200C65B30 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 2F20D6912456C5EA00C65B30;
+					};
+				};
+			};
+			buildConfigurationList = 2F20D68D2456C5EA00C65B30 /* Build configuration list for PBXProject "TataSantanderBankTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F20D6892456C5EA00C65B30;
+			productRefGroup = 2F20D6932456C5EA00C65B30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F20D6912456C5EA00C65B30 /* TataSantanderBankTest */,
+				2F20D6A72456C5F200C65B30 /* TataSantanderBankTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F20D6902456C5EA00C65B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F20D6A22456C5F100C65B30 /* LaunchScreen.storyboard in Resources */,
+				2F20D69F2456C5F100C65B30 /* Assets.xcassets in Resources */,
+				2F20D69D2456C5EA00C65B30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F20D6A62456C5F200C65B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BFCB2DCDDEE78FD9B309EB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TataSantanderBankTest/Pods-TataSantanderBankTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TataSantanderBankTest/Pods-TataSantanderBankTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TataSantanderBankTest/Pods-TataSantanderBankTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9B5E3F42EF5D0E98E7031F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TataSantanderBankTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFFEB17ACB775D5401463096 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TataSantanderBankTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F20D68E2456C5EA00C65B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F20D6D52456CDDB00C65B30 /* LoginViewController.swift in Sources */,
+				2F20D6CF2456CDDB00C65B30 /* LoginWorker.swift in Sources */,
+				2F20D6F22456CEF300C65B30 /* Error.swift in Sources */,
+				2F20D69A2456C5EA00C65B30 /* ViewController.swift in Sources */,
+				2F20D6FB2456CF4200C65B30 /* UserWorker.swift in Sources */,
+				2F20D7102456D14E00C65B30 /* HomeResponse.swift in Sources */,
+				2F20D6D12456CDDB00C65B30 /* LoginRouter.swift in Sources */,
+				2F20D6C12456CCB600C65B30 /* String+Extension.swift in Sources */,
+				2F20D6962456C5EA00C65B30 /* AppDelegate.swift in Sources */,
+				2F20D7192456D2D200C65B30 /* StatementItemTableViewCell.swift in Sources */,
+				2F20D6E92456CDF100C65B30 /* HomeInteractor.swift in Sources */,
+				2F20D6E12456CDF100C65B30 /* HomeWorker.swift in Sources */,
+				2F20D7162456D16A00C65B30 /* StatementsWorker.swift in Sources */,
+				2F20D6E32456CDF100C65B30 /* HomeRouter.swift in Sources */,
+				2F20D7132456D15D00C65B30 /* HomeService.swift in Sources */,
+				2F20D6BE2456CCB600C65B30 /* Application+Extension.swift in Sources */,
+				2F20D6CD2456CDDB00C65B30 /* LoginPresenter.swift in Sources */,
+				2F20D6E52456CDF100C65B30 /* HomeModels.swift in Sources */,
+				2F20D6D72456CDDB00C65B30 /* LoginInteractor.swift in Sources */,
+				2F20D6C02456CCB600C65B30 /* KeychainWrapper.swift in Sources */,
+				2F20D71C2456D3E900C65B30 /* HomeServiceMock.swift in Sources */,
+				2F20D6C32456CCB600C65B30 /* KeychainItemAccessibility.swift in Sources */,
+				2F20D6982456C5EA00C65B30 /* SceneDelegate.swift in Sources */,
+				2F20D6E72456CDF100C65B30 /* HomeViewController.swift in Sources */,
+				2F20D6D32456CDDB00C65B30 /* LoginModels.swift in Sources */,
+				2F20D6F82456CF3000C65B30 /* API.swift in Sources */,
+				2F20D6C22456CCB600C65B30 /* Float+Extension.swift in Sources */,
+				2F20D6F62456CF3000C65B30 /* UserService.swift in Sources */,
+				2F20D6BF2456CCB600C65B30 /* TextField+Extension.swift in Sources */,
+				2F20D70D2456D08B00C65B30 /* UserServiceMock.swift in Sources */,
+				2F20D6F02456CEF300C65B30 /* LoginResponse.swift in Sources */,
+				2F20D6DF2456CDF100C65B30 /* HomePresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F20D6A42456C5F200C65B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F20D7312456D5A100C65B30 /* Main.storyboard in Sources */,
+				2F20D72F2456D50000C65B30 /* KeychainWrapper.swift in Sources */,
+				2F20D7302456D50000C65B30 /* KeychainItemAccessibility.swift in Sources */,
+				2F20D72B2456D4CE00C65B30 /* Application+Extension.swift in Sources */,
+				2F20D72C2456D4CE00C65B30 /* TextField+Extension.swift in Sources */,
+				2F20D72D2456D4CE00C65B30 /* String+Extension.swift in Sources */,
+				2F20D72E2456D4CE00C65B30 /* Float+Extension.swift in Sources */,
+				2F20D6FC2456CF4200C65B30 /* UserWorker.swift in Sources */,
+				2F20D7172456D16A00C65B30 /* StatementsWorker.swift in Sources */,
+				2F20D71A2456D2D200C65B30 /* StatementItemTableViewCell.swift in Sources */,
+				2F20D6D62456CDDB00C65B30 /* LoginViewController.swift in Sources */,
+				2F20D6E22456CDF100C65B30 /* HomeWorker.swift in Sources */,
+				2F20D7092456D07D00C65B30 /* LoginViewControllerTests.swift in Sources */,
+				2F20D7242456D3FF00C65B30 /* HomeViewControllerTests.swift in Sources */,
+				2F20D7072456D07D00C65B30 /* LoginWorkerTests.swift in Sources */,
+				2F20D6CE2456CDDB00C65B30 /* LoginPresenter.swift in Sources */,
+				2F20D71D2456D3E900C65B30 /* HomeServiceMock.swift in Sources */,
+				2F20D6D82456CDDB00C65B30 /* LoginInteractor.swift in Sources */,
+				2F20D72A2456D3FF00C65B30 /* HomeInteractorTests.swift in Sources */,
+				2F20D6D42456CDDB00C65B30 /* LoginModels.swift in Sources */,
+				2F20D70B2456D07D00C65B30 /* LoginPresenterTests.swift in Sources */,
+				2F20D6AD2456C5F200C65B30 /* TataSantanderBankTestTests.swift in Sources */,
+				2F20D70E2456D08B00C65B30 /* UserServiceMock.swift in Sources */,
+				2F20D6F12456CEF300C65B30 /* LoginResponse.swift in Sources */,
+				2F20D6D22456CDDB00C65B30 /* LoginRouter.swift in Sources */,
+				2F20D7112456D14E00C65B30 /* HomeResponse.swift in Sources */,
+				2F20D7142456D15D00C65B30 /* HomeService.swift in Sources */,
+				2F20D6EA2456CDF100C65B30 /* HomeInteractor.swift in Sources */,
+				2F20D6D02456CDDB00C65B30 /* LoginWorker.swift in Sources */,
+				2F20D6E02456CDF100C65B30 /* HomePresenter.swift in Sources */,
+				2F20D6E42456CDF100C65B30 /* HomeRouter.swift in Sources */,
+				2F20D7052456D07D00C65B30 /* LoginInteractorTests.swift in Sources */,
+				2F20D7262456D3FF00C65B30 /* HomeWorkerTests.swift in Sources */,
+				2F20D6F72456CF3000C65B30 /* UserService.swift in Sources */,
+				2F20D7282456D3FF00C65B30 /* HomePresenterTests.swift in Sources */,
+				2F20D6E62456CDF100C65B30 /* HomeModels.swift in Sources */,
+				2F20D6F32456CEF300C65B30 /* Error.swift in Sources */,
+				2F20D6F92456CF3000C65B30 /* API.swift in Sources */,
+				2F20D6E82456CDF100C65B30 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F20D6AA2456C5F200C65B30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F20D6912456C5EA00C65B30 /* TataSantanderBankTest */;
+			targetProxy = 2F20D6A92456C5F200C65B30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F20D69B2456C5EA00C65B30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F20D69C2456C5EA00C65B30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F20D6A02456C5F100C65B30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F20D6A12456C5F100C65B30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F20D6AF2456C5F200C65B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F20D6B02456C5F200C65B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F20D6B22456C5F200C65B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE9DD550F1C552F96145A25D /* Pods-TataSantanderBankTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4785C9B5C;
+				INFOPLIST_FILE = TataSantanderBankTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.TataSantanderBankTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2F20D6B32456C5F200C65B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1130D9A655BCE9461ECC9D54 /* Pods-TataSantanderBankTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4785C9B5C;
+				INFOPLIST_FILE = TataSantanderBankTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.TataSantanderBankTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2F20D6B52456C5F200C65B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976B845E29D72BA0DD15EF33 /* Pods-TataSantanderBankTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4785C9B5C;
+				INFOPLIST_FILE = TataSantanderBankTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.TataSantanderBankTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TataSantanderBankTest.app/TataSantanderBankTest";
+			};
+			name = Debug;
+		};
+		2F20D6B62456C5F200C65B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF4193BAEE76D0B3056400E /* Pods-TataSantanderBankTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4785C9B5C;
+				INFOPLIST_FILE = TataSantanderBankTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.TataSantanderBankTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TataSantanderBankTest.app/TataSantanderBankTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F20D68D2456C5EA00C65B30 /* Build configuration list for PBXProject "TataSantanderBankTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F20D6AF2456C5F200C65B30 /* Debug */,
+				2F20D6B02456C5F200C65B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F20D6B12456C5F200C65B30 /* Build configuration list for PBXNativeTarget "TataSantanderBankTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F20D6B22456C5F200C65B30 /* Debug */,
+				2F20D6B32456C5F200C65B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F20D6B42456C5F200C65B30 /* Build configuration list for PBXNativeTarget "TataSantanderBankTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F20D6B52456C5F200C65B30 /* Debug */,
+				2F20D6B62456C5F200C65B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F20D68A2456C5EA00C65B30 /* Project object */;
+}
