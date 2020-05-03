@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="LoginTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="LoginTableViewCell" rowHeight="573" id="KGk-i7-Jjw" customClass="LoginTableViewCell" customModule="SANTANDER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="573"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="573"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="qfr-iY-zeM">
+                        <rect key="frame" x="91.5" y="9" width="180" height="172"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="KEo-K6-Ei4"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zv0-7l-raN">
+                        <rect key="frame" x="20" y="261" width="323" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="4HO-Zj-AE7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Oo-qN-jTA">
+                        <rect key="frame" x="20" y="321" width="323" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="zfx-iW-TTr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnD-UX-Dwo">
+                        <rect key="frame" x="121.5" y="425" width="120" height="44"/>
+                        <color key="backgroundColor" red="0.24262225630000001" green="0.26405575869999998" blue="0.93339270350000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="cEh-ob-bXV"/>
+                            <constraint firstAttribute="height" constant="44" id="lQm-tF-8zY"/>
+                        </constraints>
+                        <state key="normal" title="Login">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="loginButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MLA-sv-F6d"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zv0-7l-raN" firstAttribute="top" secondItem="qfr-iY-zeM" secondAttribute="bottom" constant="80" id="3CY-2C-6jo"/>
+                    <constraint firstAttribute="trailing" secondItem="1Oo-qN-jTA" secondAttribute="trailing" constant="20" id="5Nw-DM-egZ"/>
+                    <constraint firstAttribute="trailing" secondItem="zv0-7l-raN" secondAttribute="trailing" constant="20" id="75G-Sw-YED"/>
+                    <constraint firstItem="zv0-7l-raN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="8Bc-4a-i1j"/>
+                    <constraint firstItem="OnD-UX-Dwo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ONZ-Xi-EaT"/>
+                    <constraint firstItem="qfr-iY-zeM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="Opd-AT-W8H"/>
+                    <constraint firstItem="OnD-UX-Dwo" firstAttribute="top" secondItem="1Oo-qN-jTA" secondAttribute="bottom" constant="60" id="bm1-zZ-dm4"/>
+                    <constraint firstItem="qfr-iY-zeM" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.3" id="cnc-6i-dmV"/>
+                    <constraint firstItem="1Oo-qN-jTA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gK9-kj-hCU"/>
+                    <constraint firstItem="OnD-UX-Dwo" firstAttribute="top" secondItem="1Oo-qN-jTA" secondAttribute="bottom" constant="60" id="gz1-2R-H5C"/>
+                    <constraint firstItem="qfr-iY-zeM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="luh-3g-y6N"/>
+                    <constraint firstItem="1Oo-qN-jTA" firstAttribute="top" secondItem="zv0-7l-raN" secondAttribute="bottom" constant="16" id="pRN-wh-dMJ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="gz1-2R-H5C"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="loginButton" destination="OnD-UX-Dwo" id="OKf-Ez-89F"/>
+                <outlet property="logoBancoImageView" destination="qfr-iY-zeM" id="zTo-Zj-79j"/>
+                <outlet property="nomeUsuarioTextField" destination="zv0-7l-raN" id="Tr9-cP-X0p"/>
+                <outlet property="senhaUsuarioTextField" destination="1Oo-qN-jTA" id="M27-d1-bnZ"/>
+            </connections>
+            <point key="canvasLocation" x="176.81159420289856" y="167.07589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Logo" width="112" height="64"/>
+    </resources>
+</document>
