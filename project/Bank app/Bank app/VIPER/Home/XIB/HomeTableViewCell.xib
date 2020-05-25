@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="Bank_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEp-oI-lXt">
+                        <rect key="frame" x="20" y="10" width="306" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pagamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogg-Mt-njv">
+                                <rect key="frame" x="10" y="10" width="201" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" name="secondaryTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/10/2010" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVc-2s-6pY">
+                                <rect key="frame" x="231" y="15" width="65" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="i8h-vW-Oam"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" name="secondaryTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conta de luz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcm-ct-3i8">
+                                <rect key="frame" x="10" y="51" width="156" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" name="primaryTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 100.000,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Twk-W6-YP9">
+                                <rect key="frame" x="186" y="51" width="110" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="H6O-xZ-9wy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" name="primaryTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Twk-W6-YP9" secondAttribute="trailing" constant="10" id="1YF-Cb-L4t"/>
+                            <constraint firstItem="mcm-ct-3i8" firstAttribute="leading" secondItem="jEp-oI-lXt" secondAttribute="leading" constant="10" id="2N8-xS-Se0"/>
+                            <constraint firstItem="bVc-2s-6pY" firstAttribute="bottom" secondItem="ogg-Mt-njv" secondAttribute="bottom" id="2e7-Eh-wqI"/>
+                            <constraint firstItem="Twk-W6-YP9" firstAttribute="leading" secondItem="mcm-ct-3i8" secondAttribute="trailing" constant="20" id="3nD-q1-dOH"/>
+                            <constraint firstAttribute="bottom" secondItem="Twk-W6-YP9" secondAttribute="bottom" constant="10" id="HR5-Y3-URc"/>
+                            <constraint firstItem="ogg-Mt-njv" firstAttribute="leading" secondItem="jEp-oI-lXt" secondAttribute="leading" constant="10" id="Sy8-4C-iH6"/>
+                            <constraint firstItem="ogg-Mt-njv" firstAttribute="top" secondItem="jEp-oI-lXt" secondAttribute="top" constant="10" id="XcB-a5-2gT"/>
+                            <constraint firstItem="bVc-2s-6pY" firstAttribute="leading" secondItem="ogg-Mt-njv" secondAttribute="trailing" constant="20" id="nWk-wh-AgV"/>
+                            <constraint firstAttribute="bottom" secondItem="mcm-ct-3i8" secondAttribute="bottom" constant="10" id="neP-vF-FLQ"/>
+                            <constraint firstAttribute="height" constant="80" id="rsG-i5-616"/>
+                            <constraint firstAttribute="trailing" secondItem="bVc-2s-6pY" secondAttribute="trailing" constant="10" id="uaz-PX-RBR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="borderColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="jEp-oI-lXt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3LP-r8-Uac"/>
+                    <constraint firstAttribute="bottom" secondItem="jEp-oI-lXt" secondAttribute="bottom" constant="10" id="hYY-d2-ffp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jEp-oI-lXt" secondAttribute="trailing" id="jjo-Xi-W7F"/>
+                    <constraint firstItem="jEp-oI-lXt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kkr-Jh-fBr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="bVc-2s-6pY" id="jws-9h-xVq"/>
+                <outlet property="descriptionLabel" destination="mcm-ct-3i8" id="zNf-xa-sdi"/>
+                <outlet property="titleLabel" destination="ogg-Mt-njv" id="ZL9-1N-ObQ"/>
+                <outlet property="valueLabel" destination="Twk-W6-YP9" id="Q1f-os-pAs"/>
+            </connections>
+            <point key="canvasLocation" x="31.884057971014496" y="171.76339285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="borderColor">
+            <color red="0.85882352941176465" green="0.87450980392156863" blue="0.8901960784313725" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryTextColor">
+            <color red="0.28235294117647058" green="0.32941176470588235" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryTextColor">
+            <color red="0.6588235294117647" green="0.70588235294117652" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

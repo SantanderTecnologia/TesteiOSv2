@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  Bank app
+
+  Created by mmalaqui on 18/05/2020.
+  Copyright © 2020 everis. All rights reserved.
+*/
+
+"locale_identifier" = "pt_BR";
+
+//Base strings
+"BaseViewController.Alert.Ok" = "Ok";
+"BaseViewController.Alert.DefaultTitle" = "Ocurreu um erro";
+"BaseViewController.Alert.DefaultDescription" = "De momento não nos foi possivel satisfazer o seu pedido, por favor tente mais tarde";
+"noInternetError" = "Existe um problema de rede, por favor verifique a sua conexão à internet e tente novamente.";
+"tryAgain" = "Recarregar página";
+
+
+//Login View
+"Login.LoginButton" = "Login";
+"Login.UsernameTextField" = "User";
+"Login.PasswordTextfield" = "Password";
+
+//Home View
+"Home.AccountLabel" = "Conta";
+"Home.BalanceLabel" = "Saldo";
+"Home.NoResultLabel" = "Sem Resultados";
+"Home.CancelLogoutButton" = "Cancelar";
+"Home.LogoutButton" = "Terminar Sessão";
+"Home.LogoutDescription" = "Deseja terminar a sessão?";
+"Home.LogoutTitle" = "Logout";
