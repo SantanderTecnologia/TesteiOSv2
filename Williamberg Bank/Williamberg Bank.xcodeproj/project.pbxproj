@@ -1,0 +1,1005 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		352A2C54A5F1F7825C2DC758 /* Pods_Williamberg_BankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EB215C22B4A6DD47F78A96 /* Pods_Williamberg_BankTests.framework */; };
+		87063A0FF96009C0DC73A1D6 /* Pods_Williamberg_Bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B15D5AD3B25BB9AF7987688 /* Pods_Williamberg_Bank.framework */; };
+		9713C3D82470AC6900030AE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713C3D72470AC6900030AE7 /* AppDelegate.swift */; };
+		9713C3DA2470AC6900030AE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713C3D92470AC6900030AE7 /* SceneDelegate.swift */; };
+		9713C3DF2470AC6900030AE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9713C3DD2470AC6900030AE7 /* Main.storyboard */; };
+		9713C3E12470AC6B00030AE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9713C3E02470AC6B00030AE7 /* Assets.xcassets */; };
+		9713C3E42470AC6B00030AE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9713C3E22470AC6B00030AE7 /* LaunchScreen.storyboard */; };
+		9713C3EF2470AC6B00030AE7 /* Williamberg_BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713C3EE2470AC6B00030AE7 /* Williamberg_BankTests.swift */; };
+		9713C3FA2470AC6B00030AE7 /* Williamberg_BankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713C3F92470AC6B00030AE7 /* Williamberg_BankUITests.swift */; };
+		9713C40F2470B91400030AE7 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713C4092470B91400030AE7 /* LoginPresenter.swift */; };
+		9713C4122470B91400030AE7 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713C40A2470B91400030AE7 /* LoginWorker.swift */; };
+		9713C4152470B91400030AE7 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713C40B2470B91400030AE7 /* LoginRouter.swift */; };
+		9713C4182470B91400030AE7 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713C40C2470B91400030AE7 /* LoginModels.swift */; };
+		9713C41B2470B91400030AE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713C40D2470B91400030AE7 /* LoginViewController.swift */; };
+		9713C41E2470B91400030AE7 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713C40E2470B91400030AE7 /* LoginInteractor.swift */; };
+		972EEB6D24845341007B6981 /* BaseBankAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972EEB6C24845340007B6981 /* BaseBankAPITest.swift */; };
+		9730E30A247964C7002ED4A4 /* BaseBankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730E309247964C7002ED4A4 /* BaseBankAPI.swift */; };
+		9730E30B247964C7002ED4A4 /* BaseBankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730E309247964C7002ED4A4 /* BaseBankAPI.swift */; };
+		9730E30E247968C0002ED4A4 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730E30D247968C0002ED4A4 /* UserAccount.swift */; };
+		974A238B248D18AE00938D5B /* StatementsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A238A248D18AE00938D5B /* StatementsViewControllerTest.swift */; };
+		975A3580247AD61B00BAF83C /* StatementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975A357F247AD61B00BAF83C /* StatementsTableViewCell.swift */; };
+		975A3582247B017C00BAF83C /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975A3581247B017C00BAF83C /* Statement.swift */; };
+		975A3585247B226200BAF83C /* StatementDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975A3584247B226200BAF83C /* StatementDTO.swift */; };
+		975AC8D02487248400A8CDD7 /* LoginViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975AC8CF2487248400A8CDD7 /* LoginViewControllerTest.swift */; };
+		97610B28248C4A7A007F3D8D /* LoginInteratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97610B27248C4A7A007F3D8D /* LoginInteratorTest.swift */; };
+		97610B2A248C55BD007F3D8D /* StatementsInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97610B29248C55BD007F3D8D /* StatementsInteractorTest.swift */; };
+		97610B2C248C76E6007F3D8D /* StatementsModelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97610B2B248C76E6007F3D8D /* StatementsModelsTest.swift */; };
+		976A8F662485CF1C00CA0936 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A8F652485CF1C00CA0936 /* LoginPresenterTest.swift */; };
+		976A8F682485DE0900CA0936 /* StatementsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A8F672485DE0900CA0936 /* StatementsPresenterTest.swift */; };
+		97926E2F2485B9BD001BFC67 /* StatementsWorkerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97926E2E2485B9BD001BFC67 /* StatementsWorkerTest.swift */; };
+		97BBB37024805B0F00FC882A /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 97BBB36F24805B0F00FC882A /* loading.json */; };
+		97BBB37124805B0F00FC882A /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 97BBB36F24805B0F00FC882A /* loading.json */; };
+		97C0E66324716C2400AC4CBD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C0E66224716C2400AC4CBD /* Constants.swift */; };
+		97C115E124831DBA0096E43D /* LoginRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C115E024831DBA0096E43D /* LoginRouterTest.swift */; };
+		97C115E3248333530096E43D /* LoginWorkerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C115E2248333530096E43D /* LoginWorkerTest.swift */; };
+		97D5E91A24734AE600F616E7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D5E91924734AE600F616E7 /* Extensions.swift */; };
+		97E9595C2479D97D00E9FF49 /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E9595B2479D97D00E9FF49 /* LoginDTO.swift */; };
+		97E9595F2479D9BB00E9FF49 /* LoginServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E9595E2479D9BB00E9FF49 /* LoginServiceError.swift */; };
+		97E959602479D9BB00E9FF49 /* LoginServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E9595E2479D9BB00E9FF49 /* LoginServiceError.swift */; };
+		97E95968247A08BD00E9FF49 /* StatementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E95962247A08BD00E9FF49 /* StatementsPresenter.swift */; };
+		97E9596A247A08BD00E9FF49 /* StatementsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E95963247A08BD00E9FF49 /* StatementsWorker.swift */; };
+		97E9596C247A08BD00E9FF49 /* StatementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E95964247A08BD00E9FF49 /* StatementsRouter.swift */; };
+		97E9596E247A08BD00E9FF49 /* StatementsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E95965247A08BD00E9FF49 /* StatementsModels.swift */; };
+		97E95970247A08BD00E9FF49 /* StatementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E95966247A08BD00E9FF49 /* StatementsViewController.swift */; };
+		97E95972247A08BD00E9FF49 /* StatementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E95967247A08BD00E9FF49 /* StatementsInteractor.swift */; };
+		97FB09BC248277CB00678B75 /* loading_white.json in Resources */ = {isa = PBXBuildFile; fileRef = 97FB09BB248277CB00678B75 /* loading_white.json */; };
+		D4E4191356E28EB6BA21F73B /* Pods_Williamberg_Bank_Williamberg_BankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924E1D0F0B7EED6D6462CFC8 /* Pods_Williamberg_Bank_Williamberg_BankUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9713C3EB2470AC6B00030AE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9713C3CC2470AC6900030AE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9713C3D32470AC6900030AE7;
+			remoteInfo = "Williamberg Bank";
+		};
+		9713C3F62470AC6B00030AE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9713C3CC2470AC6900030AE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9713C3D32470AC6900030AE7;
+			remoteInfo = "Williamberg Bank";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		281D3FD598F2FE6E561DF275 /* Pods-Williamberg BankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Williamberg BankTests.debug.xcconfig"; path = "Target Support Files/Pods-Williamberg BankTests/Pods-Williamberg BankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		34FB3FBD8F238F473923C45B /* Pods-Williamberg Bank-Williamberg BankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Williamberg Bank-Williamberg BankUITests.release.xcconfig"; path = "Target Support Files/Pods-Williamberg Bank-Williamberg BankUITests/Pods-Williamberg Bank-Williamberg BankUITests.release.xcconfig"; sourceTree = "<group>"; };
+		43148BF0D3AEEB45BF7418A2 /* Pods-Williamberg Bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Williamberg Bank.debug.xcconfig"; path = "Target Support Files/Pods-Williamberg Bank/Pods-Williamberg Bank.debug.xcconfig"; sourceTree = "<group>"; };
+		6B15D5AD3B25BB9AF7987688 /* Pods_Williamberg_Bank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Williamberg_Bank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75FB5451CA616E5E13AEEDED /* Pods-Williamberg Bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Williamberg Bank.release.xcconfig"; path = "Target Support Files/Pods-Williamberg Bank/Pods-Williamberg Bank.release.xcconfig"; sourceTree = "<group>"; };
+		7A9AE590E68B0A963FF0FA51 /* Pods-Williamberg Bank-Williamberg BankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Williamberg Bank-Williamberg BankUITests.debug.xcconfig"; path = "Target Support Files/Pods-Williamberg Bank-Williamberg BankUITests/Pods-Williamberg Bank-Williamberg BankUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		924E1D0F0B7EED6D6462CFC8 /* Pods_Williamberg_Bank_Williamberg_BankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Williamberg_Bank_Williamberg_BankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9713C3D42470AC6900030AE7 /* Williamberg Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Williamberg Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9713C3D72470AC6900030AE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9713C3D92470AC6900030AE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9713C3DE2470AC6900030AE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9713C3E02470AC6B00030AE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9713C3E32470AC6B00030AE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9713C3E52470AC6B00030AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9713C3EA2470AC6B00030AE7 /* Williamberg BankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Williamberg BankTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9713C3EE2470AC6B00030AE7 /* Williamberg_BankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Williamberg_BankTests.swift; sourceTree = "<group>"; };
+		9713C3F02470AC6B00030AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9713C3F52470AC6B00030AE7 /* Williamberg BankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Williamberg BankUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9713C3F92470AC6B00030AE7 /* Williamberg_BankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Williamberg_BankUITests.swift; sourceTree = "<group>"; };
+		9713C3FB2470AC6B00030AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9713C4092470B91400030AE7 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		9713C40A2470B91400030AE7 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		9713C40B2470B91400030AE7 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		9713C40C2470B91400030AE7 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		9713C40D2470B91400030AE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9713C40E2470B91400030AE7 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		972EEB6C24845340007B6981 /* BaseBankAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBankAPITest.swift; sourceTree = "<group>"; };
+		9730E309247964C7002ED4A4 /* BaseBankAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBankAPI.swift; sourceTree = "<group>"; };
+		9730E30D247968C0002ED4A4 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		974A238A248D18AE00938D5B /* StatementsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsViewControllerTest.swift; sourceTree = "<group>"; };
+		975A357F247AD61B00BAF83C /* StatementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsTableViewCell.swift; sourceTree = "<group>"; };
+		975A3581247B017C00BAF83C /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		975A3584247B226200BAF83C /* StatementDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementDTO.swift; sourceTree = "<group>"; };
+		975AC8CF2487248400A8CDD7 /* LoginViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTest.swift; sourceTree = "<group>"; };
+		97610B27248C4A7A007F3D8D /* LoginInteratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteratorTest.swift; sourceTree = "<group>"; };
+		97610B29248C55BD007F3D8D /* StatementsInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsInteractorTest.swift; sourceTree = "<group>"; };
+		97610B2B248C76E6007F3D8D /* StatementsModelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsModelsTest.swift; sourceTree = "<group>"; };
+		976A8F652485CF1C00CA0936 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
+		976A8F672485DE0900CA0936 /* StatementsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsPresenterTest.swift; sourceTree = "<group>"; };
+		97926E2E2485B9BD001BFC67 /* StatementsWorkerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsWorkerTest.swift; sourceTree = "<group>"; };
+		97BBB36F24805B0F00FC882A /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		97C0E66224716C2400AC4CBD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		97C115E024831DBA0096E43D /* LoginRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterTest.swift; sourceTree = "<group>"; };
+		97C115E2248333530096E43D /* LoginWorkerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerTest.swift; sourceTree = "<group>"; };
+		97D5E91924734AE600F616E7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		97E9595B2479D97D00E9FF49 /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
+		97E9595E2479D9BB00E9FF49 /* LoginServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceError.swift; sourceTree = "<group>"; };
+		97E95962247A08BD00E9FF49 /* StatementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsPresenter.swift; sourceTree = "<group>"; };
+		97E95963247A08BD00E9FF49 /* StatementsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsWorker.swift; sourceTree = "<group>"; };
+		97E95964247A08BD00E9FF49 /* StatementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsRouter.swift; sourceTree = "<group>"; };
+		97E95965247A08BD00E9FF49 /* StatementsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsModels.swift; sourceTree = "<group>"; };
+		97E95966247A08BD00E9FF49 /* StatementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsViewController.swift; sourceTree = "<group>"; };
+		97E95967247A08BD00E9FF49 /* StatementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsInteractor.swift; sourceTree = "<group>"; };
+		97FB09BB248277CB00678B75 /* loading_white.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loading_white.json; sourceTree = "<group>"; };
+		D747DF17EB784C3FA52C21EA /* Pods-Williamberg Bank-Williamberg BankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Williamberg Bank-Williamberg BankTests.release.xcconfig"; path = "Target Support Files/Pods-Williamberg Bank-Williamberg BankTests/Pods-Williamberg Bank-Williamberg BankTests.release.xcconfig"; sourceTree = "<group>"; };
+		F030EA26661662E64F7454CE /* Pods-Williamberg BankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Williamberg BankTests.release.xcconfig"; path = "Target Support Files/Pods-Williamberg BankTests/Pods-Williamberg BankTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0EB215C22B4A6DD47F78A96 /* Pods_Williamberg_BankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Williamberg_BankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F312EF5795669667D979127C /* Pods-Williamberg Bank-Williamberg BankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Williamberg Bank-Williamberg BankTests.debug.xcconfig"; path = "Target Support Files/Pods-Williamberg Bank-Williamberg BankTests/Pods-Williamberg Bank-Williamberg BankTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9713C3D12470AC6900030AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87063A0FF96009C0DC73A1D6 /* Pods_Williamberg_Bank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9713C3E72470AC6B00030AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352A2C54A5F1F7825C2DC758 /* Pods_Williamberg_BankTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9713C3F22470AC6B00030AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E4191356E28EB6BA21F73B /* Pods_Williamberg_Bank_Williamberg_BankUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D7B886E6E247D26FF320F42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43148BF0D3AEEB45BF7418A2 /* Pods-Williamberg Bank.debug.xcconfig */,
+				75FB5451CA616E5E13AEEDED /* Pods-Williamberg Bank.release.xcconfig */,
+				7A9AE590E68B0A963FF0FA51 /* Pods-Williamberg Bank-Williamberg BankUITests.debug.xcconfig */,
+				34FB3FBD8F238F473923C45B /* Pods-Williamberg Bank-Williamberg BankUITests.release.xcconfig */,
+				281D3FD598F2FE6E561DF275 /* Pods-Williamberg BankTests.debug.xcconfig */,
+				F030EA26661662E64F7454CE /* Pods-Williamberg BankTests.release.xcconfig */,
+				F312EF5795669667D979127C /* Pods-Williamberg Bank-Williamberg BankTests.debug.xcconfig */,
+				D747DF17EB784C3FA52C21EA /* Pods-Williamberg Bank-Williamberg BankTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9713C3CB2470AC6900030AE7 = {
+			isa = PBXGroup;
+			children = (
+				9713C3D62470AC6900030AE7 /* Williamberg Bank */,
+				9713C3ED2470AC6B00030AE7 /* Williamberg BankTests */,
+				9713C3F82470AC6B00030AE7 /* Williamberg BankUITests */,
+				9713C3D52470AC6900030AE7 /* Products */,
+				6D7B886E6E247D26FF320F42 /* Pods */,
+				D3CF5ACB164E2567E3795441 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9713C3D52470AC6900030AE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9713C3D42470AC6900030AE7 /* Williamberg Bank.app */,
+				9713C3EA2470AC6B00030AE7 /* Williamberg BankTests.xctest */,
+				9713C3F52470AC6B00030AE7 /* Williamberg BankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9713C3D62470AC6900030AE7 /* Williamberg Bank */ = {
+			isa = PBXGroup;
+			children = (
+				97BBB36E2480582A00FC882A /* Jsons */,
+				975A357E247AC11700BAF83C /* Views */,
+				9730E30C24796885002ED4A4 /* Models */,
+				9730E3082479648B002ED4A4 /* Services */,
+				9713C4072470B84700030AE7 /* Scenes */,
+				9713C3D72470AC6900030AE7 /* AppDelegate.swift */,
+				9713C3D92470AC6900030AE7 /* SceneDelegate.swift */,
+				9713C3DD2470AC6900030AE7 /* Main.storyboard */,
+				9713C3E02470AC6B00030AE7 /* Assets.xcassets */,
+				9713C3E22470AC6B00030AE7 /* LaunchScreen.storyboard */,
+				9713C3E52470AC6B00030AE7 /* Info.plist */,
+			);
+			path = "Williamberg Bank";
+			sourceTree = "<group>";
+		};
+		9713C3ED2470AC6B00030AE7 /* Williamberg BankTests */ = {
+			isa = PBXGroup;
+			children = (
+				972EEB6B24845281007B6981 /* Services */,
+				97C115DE24831C650096E43D /* Scenes */,
+				9713C3EE2470AC6B00030AE7 /* Williamberg_BankTests.swift */,
+				9713C3F02470AC6B00030AE7 /* Info.plist */,
+			);
+			path = "Williamberg BankTests";
+			sourceTree = "<group>";
+		};
+		9713C3F82470AC6B00030AE7 /* Williamberg BankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9713C3F92470AC6B00030AE7 /* Williamberg_BankUITests.swift */,
+				9713C3FB2470AC6B00030AE7 /* Info.plist */,
+			);
+			path = "Williamberg BankUITests";
+			sourceTree = "<group>";
+		};
+		9713C4072470B84700030AE7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9713C4082470B8EC00030AE7 /* Login */,
+				97E95961247A088000E9FF49 /* Statements */,
+				97C0E66124716B1E00AC4CBD /* Common */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9713C4082470B8EC00030AE7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9713C4092470B91400030AE7 /* LoginPresenter.swift */,
+				9713C40A2470B91400030AE7 /* LoginWorker.swift */,
+				9713C40B2470B91400030AE7 /* LoginRouter.swift */,
+				9713C40C2470B91400030AE7 /* LoginModels.swift */,
+				9713C40D2470B91400030AE7 /* LoginViewController.swift */,
+				9713C40E2470B91400030AE7 /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		972EEB6B24845281007B6981 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				972EEB6C24845340007B6981 /* BaseBankAPITest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9730E3082479648B002ED4A4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9730E309247964C7002ED4A4 /* BaseBankAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9730E30C24796885002ED4A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9730E30D247968C0002ED4A4 /* UserAccount.swift */,
+				97E9595B2479D97D00E9FF49 /* LoginDTO.swift */,
+				97E9595E2479D9BB00E9FF49 /* LoginServiceError.swift */,
+				975A3581247B017C00BAF83C /* Statement.swift */,
+				975A3584247B226200BAF83C /* StatementDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		975A357E247AC11700BAF83C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				975A357F247AD61B00BAF83C /* StatementsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97926E2D2485B97C001BFC67 /* Statements */ = {
+			isa = PBXGroup;
+			children = (
+				97926E2E2485B9BD001BFC67 /* StatementsWorkerTest.swift */,
+				976A8F672485DE0900CA0936 /* StatementsPresenterTest.swift */,
+				97610B29248C55BD007F3D8D /* StatementsInteractorTest.swift */,
+				97610B2B248C76E6007F3D8D /* StatementsModelsTest.swift */,
+				974A238A248D18AE00938D5B /* StatementsViewControllerTest.swift */,
+			);
+			path = Statements;
+			sourceTree = "<group>";
+		};
+		97BBB36E2480582A00FC882A /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				97BBB36F24805B0F00FC882A /* loading.json */,
+				97FB09BB248277CB00678B75 /* loading_white.json */,
+			);
+			path = Jsons;
+			sourceTree = "<group>";
+		};
+		97C0E66124716B1E00AC4CBD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				97C0E66224716C2400AC4CBD /* Constants.swift */,
+				97D5E91924734AE600F616E7 /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		97C115DE24831C650096E43D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				97926E2D2485B97C001BFC67 /* Statements */,
+				97C115DF24831C990096E43D /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		97C115DF24831C990096E43D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				97C115E024831DBA0096E43D /* LoginRouterTest.swift */,
+				97C115E2248333530096E43D /* LoginWorkerTest.swift */,
+				976A8F652485CF1C00CA0936 /* LoginPresenterTest.swift */,
+				975AC8CF2487248400A8CDD7 /* LoginViewControllerTest.swift */,
+				97610B27248C4A7A007F3D8D /* LoginInteratorTest.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		97E95961247A088000E9FF49 /* Statements */ = {
+			isa = PBXGroup;
+			children = (
+				97E95962247A08BD00E9FF49 /* StatementsPresenter.swift */,
+				97E95963247A08BD00E9FF49 /* StatementsWorker.swift */,
+				97E95964247A08BD00E9FF49 /* StatementsRouter.swift */,
+				97E95965247A08BD00E9FF49 /* StatementsModels.swift */,
+				97E95966247A08BD00E9FF49 /* StatementsViewController.swift */,
+				97E95967247A08BD00E9FF49 /* StatementsInteractor.swift */,
+			);
+			path = Statements;
+			sourceTree = "<group>";
+		};
+		D3CF5ACB164E2567E3795441 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B15D5AD3B25BB9AF7987688 /* Pods_Williamberg_Bank.framework */,
+				924E1D0F0B7EED6D6462CFC8 /* Pods_Williamberg_Bank_Williamberg_BankUITests.framework */,
+				F0EB215C22B4A6DD47F78A96 /* Pods_Williamberg_BankTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9713C3D32470AC6900030AE7 /* Williamberg Bank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9713C3FE2470AC6B00030AE7 /* Build configuration list for PBXNativeTarget "Williamberg Bank" */;
+			buildPhases = (
+				007B5923B47A18E80B04595E /* [CP] Check Pods Manifest.lock */,
+				9713C3D02470AC6900030AE7 /* Sources */,
+				9713C3D12470AC6900030AE7 /* Frameworks */,
+				9713C3D22470AC6900030AE7 /* Resources */,
+				44ABD7CB4F7C187E4593999B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Williamberg Bank";
+			productName = "Williamberg Bank";
+			productReference = 9713C3D42470AC6900030AE7 /* Williamberg Bank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9713C3E92470AC6B00030AE7 /* Williamberg BankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9713C4012470AC6B00030AE7 /* Build configuration list for PBXNativeTarget "Williamberg BankTests" */;
+			buildPhases = (
+				25B9565E418CE22F9E4E942E /* [CP] Check Pods Manifest.lock */,
+				9713C3E62470AC6B00030AE7 /* Sources */,
+				9713C3E72470AC6B00030AE7 /* Frameworks */,
+				9713C3E82470AC6B00030AE7 /* Resources */,
+				9C1CE9AA7270124DB8ED2A9E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9713C3EC2470AC6B00030AE7 /* PBXTargetDependency */,
+			);
+			name = "Williamberg BankTests";
+			productName = "Williamberg BankTests";
+			productReference = 9713C3EA2470AC6B00030AE7 /* Williamberg BankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9713C3F42470AC6B00030AE7 /* Williamberg BankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9713C4042470AC6B00030AE7 /* Build configuration list for PBXNativeTarget "Williamberg BankUITests" */;
+			buildPhases = (
+				2D8FFD1466C9320C596D642B /* [CP] Check Pods Manifest.lock */,
+				9713C3F12470AC6B00030AE7 /* Sources */,
+				9713C3F22470AC6B00030AE7 /* Frameworks */,
+				9713C3F32470AC6B00030AE7 /* Resources */,
+				F111137997261CA4C19D2673 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9713C3F72470AC6B00030AE7 /* PBXTargetDependency */,
+			);
+			name = "Williamberg BankUITests";
+			productName = "Williamberg BankUITests";
+			productReference = 9713C3F52470AC6B00030AE7 /* Williamberg BankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9713C3CC2470AC6900030AE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Williamberg;
+				TargetAttributes = {
+					9713C3D32470AC6900030AE7 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					9713C3E92470AC6B00030AE7 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 9713C3D32470AC6900030AE7;
+					};
+					9713C3F42470AC6B00030AE7 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 9713C3D32470AC6900030AE7;
+					};
+				};
+			};
+			buildConfigurationList = 9713C3CF2470AC6900030AE7 /* Build configuration list for PBXProject "Williamberg Bank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9713C3CB2470AC6900030AE7;
+			productRefGroup = 9713C3D52470AC6900030AE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9713C3D32470AC6900030AE7 /* Williamberg Bank */,
+				9713C3E92470AC6B00030AE7 /* Williamberg BankTests */,
+				9713C3F42470AC6B00030AE7 /* Williamberg BankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9713C3D22470AC6900030AE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9713C3E42470AC6B00030AE7 /* LaunchScreen.storyboard in Resources */,
+				97FB09BC248277CB00678B75 /* loading_white.json in Resources */,
+				9713C3E12470AC6B00030AE7 /* Assets.xcassets in Resources */,
+				97BBB37024805B0F00FC882A /* loading.json in Resources */,
+				9713C3DF2470AC6900030AE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9713C3E82470AC6B00030AE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BBB37124805B0F00FC882A /* loading.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9713C3F32470AC6B00030AE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		007B5923B47A18E80B04595E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Williamberg Bank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25B9565E418CE22F9E4E942E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Williamberg BankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D8FFD1466C9320C596D642B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Williamberg Bank-Williamberg BankUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44ABD7CB4F7C187E4593999B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Williamberg Bank/Pods-Williamberg Bank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Williamberg Bank/Pods-Williamberg Bank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Williamberg Bank/Pods-Williamberg Bank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C1CE9AA7270124DB8ED2A9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Williamberg BankTests/Pods-Williamberg BankTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Williamberg BankTests/Pods-Williamberg BankTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Williamberg BankTests/Pods-Williamberg BankTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F111137997261CA4C19D2673 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Williamberg Bank-Williamberg BankUITests/Pods-Williamberg Bank-Williamberg BankUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Williamberg Bank-Williamberg BankUITests/Pods-Williamberg Bank-Williamberg BankUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Williamberg Bank-Williamberg BankUITests/Pods-Williamberg Bank-Williamberg BankUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9713C3D02470AC6900030AE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9713C4122470B91400030AE7 /* LoginWorker.swift in Sources */,
+				9713C40F2470B91400030AE7 /* LoginPresenter.swift in Sources */,
+				9730E30A247964C7002ED4A4 /* BaseBankAPI.swift in Sources */,
+				97E9596A247A08BD00E9FF49 /* StatementsWorker.swift in Sources */,
+				97E95972247A08BD00E9FF49 /* StatementsInteractor.swift in Sources */,
+				97E9595C2479D97D00E9FF49 /* LoginDTO.swift in Sources */,
+				97E9595F2479D9BB00E9FF49 /* LoginServiceError.swift in Sources */,
+				9713C4182470B91400030AE7 /* LoginModels.swift in Sources */,
+				9713C4152470B91400030AE7 /* LoginRouter.swift in Sources */,
+				97E95970247A08BD00E9FF49 /* StatementsViewController.swift in Sources */,
+				9713C41B2470B91400030AE7 /* LoginViewController.swift in Sources */,
+				97E9596E247A08BD00E9FF49 /* StatementsModels.swift in Sources */,
+				975A3585247B226200BAF83C /* StatementDTO.swift in Sources */,
+				97D5E91A24734AE600F616E7 /* Extensions.swift in Sources */,
+				9713C3D82470AC6900030AE7 /* AppDelegate.swift in Sources */,
+				9730E30E247968C0002ED4A4 /* UserAccount.swift in Sources */,
+				9713C3DA2470AC6900030AE7 /* SceneDelegate.swift in Sources */,
+				975A3580247AD61B00BAF83C /* StatementsTableViewCell.swift in Sources */,
+				9713C41E2470B91400030AE7 /* LoginInteractor.swift in Sources */,
+				97C0E66324716C2400AC4CBD /* Constants.swift in Sources */,
+				97E95968247A08BD00E9FF49 /* StatementsPresenter.swift in Sources */,
+				97E9596C247A08BD00E9FF49 /* StatementsRouter.swift in Sources */,
+				975A3582247B017C00BAF83C /* Statement.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9713C3E62470AC6B00030AE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97610B2A248C55BD007F3D8D /* StatementsInteractorTest.swift in Sources */,
+				97C115E124831DBA0096E43D /* LoginRouterTest.swift in Sources */,
+				976A8F682485DE0900CA0936 /* StatementsPresenterTest.swift in Sources */,
+				975AC8D02487248400A8CDD7 /* LoginViewControllerTest.swift in Sources */,
+				976A8F662485CF1C00CA0936 /* LoginPresenterTest.swift in Sources */,
+				9713C3EF2470AC6B00030AE7 /* Williamberg_BankTests.swift in Sources */,
+				97610B2C248C76E6007F3D8D /* StatementsModelsTest.swift in Sources */,
+				9730E30B247964C7002ED4A4 /* BaseBankAPI.swift in Sources */,
+				97926E2F2485B9BD001BFC67 /* StatementsWorkerTest.swift in Sources */,
+				97C115E3248333530096E43D /* LoginWorkerTest.swift in Sources */,
+				974A238B248D18AE00938D5B /* StatementsViewControllerTest.swift in Sources */,
+				972EEB6D24845341007B6981 /* BaseBankAPITest.swift in Sources */,
+				97610B28248C4A7A007F3D8D /* LoginInteratorTest.swift in Sources */,
+				97E959602479D9BB00E9FF49 /* LoginServiceError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9713C3F12470AC6B00030AE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9713C3FA2470AC6B00030AE7 /* Williamberg_BankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9713C3EC2470AC6B00030AE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9713C3D32470AC6900030AE7 /* Williamberg Bank */;
+			targetProxy = 9713C3EB2470AC6B00030AE7 /* PBXContainerItemProxy */;
+		};
+		9713C3F72470AC6B00030AE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9713C3D32470AC6900030AE7 /* Williamberg Bank */;
+			targetProxy = 9713C3F62470AC6B00030AE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9713C3DD2470AC6900030AE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9713C3DE2470AC6900030AE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9713C3E22470AC6B00030AE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9713C3E32470AC6B00030AE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9713C3FC2470AC6B00030AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9713C3FD2470AC6B00030AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9713C3FF2470AC6B00030AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43148BF0D3AEEB45BF7418A2 /* Pods-Williamberg Bank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XRA82V6CB;
+				INFOPLIST_FILE = "Williamberg Bank/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.williamberg.Williamberg-Bank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9713C4002470AC6B00030AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75FB5451CA616E5E13AEEDED /* Pods-Williamberg Bank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XRA82V6CB;
+				INFOPLIST_FILE = "Williamberg Bank/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.williamberg.Williamberg-Bank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9713C4022470AC6B00030AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 281D3FD598F2FE6E561DF275 /* Pods-Williamberg BankTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XRA82V6CB;
+				INFOPLIST_FILE = "Williamberg BankTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.williamberg.Williamberg-BankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Williamberg Bank.app/Williamberg Bank";
+			};
+			name = Debug;
+		};
+		9713C4032470AC6B00030AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F030EA26661662E64F7454CE /* Pods-Williamberg BankTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XRA82V6CB;
+				INFOPLIST_FILE = "Williamberg BankTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.williamberg.Williamberg-BankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Williamberg Bank.app/Williamberg Bank";
+			};
+			name = Release;
+		};
+		9713C4052470AC6B00030AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A9AE590E68B0A963FF0FA51 /* Pods-Williamberg Bank-Williamberg BankUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XRA82V6CB;
+				INFOPLIST_FILE = "Williamberg BankUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.williamberg.Williamberg-BankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Williamberg Bank";
+			};
+			name = Debug;
+		};
+		9713C4062470AC6B00030AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34FB3FBD8F238F473923C45B /* Pods-Williamberg Bank-Williamberg BankUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XRA82V6CB;
+				INFOPLIST_FILE = "Williamberg BankUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.williamberg.Williamberg-BankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Williamberg Bank";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9713C3CF2470AC6900030AE7 /* Build configuration list for PBXProject "Williamberg Bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9713C3FC2470AC6B00030AE7 /* Debug */,
+				9713C3FD2470AC6B00030AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9713C3FE2470AC6B00030AE7 /* Build configuration list for PBXNativeTarget "Williamberg Bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9713C3FF2470AC6B00030AE7 /* Debug */,
+				9713C4002470AC6B00030AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9713C4012470AC6B00030AE7 /* Build configuration list for PBXNativeTarget "Williamberg BankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9713C4022470AC6B00030AE7 /* Debug */,
+				9713C4032470AC6B00030AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9713C4042470AC6B00030AE7 /* Build configuration list for PBXNativeTarget "Williamberg BankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9713C4052470AC6B00030AE7 /* Debug */,
+				9713C4062470AC6B00030AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9713C3CC2470AC6900030AE7 /* Project object */;
+}
