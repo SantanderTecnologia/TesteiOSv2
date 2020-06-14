@@ -1,0 +1,6 @@
+framework module VMaskTextField {
+  umbrella header "VMaskTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

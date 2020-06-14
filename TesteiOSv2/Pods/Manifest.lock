@@ -1,0 +1,20 @@
+PODS:
+  - SwiftKeychainWrapper (3.4.0)
+  - VMaskTextField (1.0.8)
+
+DEPENDENCIES:
+  - SwiftKeychainWrapper
+  - VMaskTextField
+
+SPEC REPOS:
+  trunk:
+    - SwiftKeychainWrapper
+    - VMaskTextField
+
+SPEC CHECKSUMS:
+  SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
+  VMaskTextField: e77fe33633f999c5c38e70bed0afece0625624a4
+
+PODFILE CHECKSUM: 7394a0d487862ba91db7d86f1356e8b5fe807bd5
+
+COCOAPODS: 1.9.3
