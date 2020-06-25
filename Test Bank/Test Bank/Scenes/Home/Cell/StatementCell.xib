@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StatementCell" rowHeight="80" id="wVO-mM-AJu" customClass="StatementCell" customModule="Test_Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wVO-mM-AJu" id="jRI-ed-s65">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zS-s5-KYn">
+                        <rect key="frame" x="16" y="16" width="363" height="91"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="BSF-ur-4LH">
+                                <rect key="frame" x="16" y="16" width="181.5" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pagamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2s-M6-EGg">
+                                        <rect key="frame" x="0.0" y="0.0" width="181.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" red="0.6588235294117647" green="0.70588235294117641" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Conta de luz" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5q-9q-PDd">
+                                        <rect key="frame" x="0.0" y="39.5" width="181.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="79P-pv-5KG">
+                                <rect key="frame" x="205.5" y="16" width="141.5" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/12/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JA-zu-iUT">
+                                        <rect key="frame" x="79.5" y="0.0" width="62" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.6588235294" green="0.70588235290000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="R$1.000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FN1-dO-Ttg">
+                                        <rect key="frame" x="35" y="35" width="106.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.28235294117647058" green="0.32941176470588235" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="79P-pv-5KG" secondAttribute="trailing" constant="16" id="0iN-mi-W3M"/>
+                            <constraint firstItem="79P-pv-5KG" firstAttribute="top" secondItem="8zS-s5-KYn" secondAttribute="top" constant="16" id="8Jn-Af-DRa"/>
+                            <constraint firstItem="BSF-ur-4LH" firstAttribute="width" secondItem="8zS-s5-KYn" secondAttribute="width" multiplier="0.5" id="ZQK-hO-gLi"/>
+                            <constraint firstItem="BSF-ur-4LH" firstAttribute="leading" secondItem="8zS-s5-KYn" secondAttribute="leading" constant="16" id="dFN-kJ-yRv"/>
+                            <constraint firstAttribute="bottom" secondItem="BSF-ur-4LH" secondAttribute="bottom" constant="16" id="i76-7S-Mr9"/>
+                            <constraint firstItem="79P-pv-5KG" firstAttribute="leading" secondItem="BSF-ur-4LH" secondAttribute="trailing" constant="8" id="oNy-IG-jdQ"/>
+                            <constraint firstItem="BSF-ur-4LH" firstAttribute="top" secondItem="8zS-s5-KYn" secondAttribute="top" constant="16" id="vlB-Ss-HgO"/>
+                            <constraint firstAttribute="bottom" secondItem="79P-pv-5KG" secondAttribute="bottom" constant="16" id="x5e-Vu-rdK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8zS-s5-KYn" secondAttribute="trailing" constant="16" id="M4K-Z1-7XW"/>
+                    <constraint firstItem="8zS-s5-KYn" firstAttribute="top" secondItem="jRI-ed-s65" secondAttribute="top" constant="16" id="bFn-55-8PB"/>
+                    <constraint firstAttribute="bottom" secondItem="8zS-s5-KYn" secondAttribute="bottom" constant="16" id="pHB-Ez-8Df"/>
+                    <constraint firstItem="8zS-s5-KYn" firstAttribute="leading" secondItem="jRI-ed-s65" secondAttribute="leading" constant="16" id="rzy-s0-3tc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backview" destination="8zS-s5-KYn" id="HUM-gN-SY3"/>
+                <outlet property="dateLabel" destination="5JA-zu-iUT" id="IeR-ne-TAu"/>
+                <outlet property="descriptionLabel" destination="L5q-9q-PDd" id="tPd-dh-BhZ"/>
+                <outlet property="titleLabel" destination="s2s-M6-EGg" id="q9s-eG-7QM"/>
+                <outlet property="valueLabel" destination="FN1-dO-Ttg" id="JVg-ac-EnE"/>
+            </connections>
+            <point key="canvasLocation" x="51.449275362318843" y="-248.10267857142856"/>
+        </tableViewCell>
+    </objects>
+</document>
