@@ -1,0 +1,1035 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F81162F24B104B60083A3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81162E24B104B60083A3DA /* AppDelegate.swift */; };
+		3F81163124B104B60083A3DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81163024B104B60083A3DA /* SceneDelegate.swift */; };
+		3F81163824B104B80083A3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F81163724B104B80083A3DA /* Assets.xcassets */; };
+		3F81163B24B104B80083A3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F81163924B104B80083A3DA /* LaunchScreen.storyboard */; };
+		3F81164624B104B80083A3DA /* Accenture_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81164524B104B80083A3DA /* Accenture_ChallengeTests.swift */; };
+		3F81165124B104B80083A3DA /* Accenture_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81165024B104B80083A3DA /* Accenture_ChallengeUITests.swift */; };
+		3F81166A24B107560083A3DA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81166924B107560083A3DA /* LoginView.swift */; };
+		3F81166C24B107640083A3DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81166B24B107640083A3DA /* LoginViewController.swift */; };
+		3F81166E24B1076F0083A3DA /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81166D24B1076F0083A3DA /* LoginInteractor.swift */; };
+		3F81167024B1077A0083A3DA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81166F24B1077A0083A3DA /* LoginPresenter.swift */; };
+		3F81167224B107840083A3DA /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81167124B107840083A3DA /* LoginWorker.swift */; };
+		3F81167424B1078E0083A3DA /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81167324B1078E0083A3DA /* LoginRouter.swift */; };
+		3F81167624B107990083A3DA /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81167524B107990083A3DA /* LoginModels.swift */; };
+		3F81167824B107B50083A3DA /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81167724B107B50083A3DA /* ViewCodeProtocol.swift */; };
+		3F81167A24B1086E0083A3DA /* TableViewCellBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81167924B1086E0083A3DA /* TableViewCellBuilderProtocol.swift */; };
+		3F81167C24B108C40083A3DA /* TableViewSectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81167B24B108C40083A3DA /* TableViewSectionProtocol.swift */; };
+		3F81167E24B1092B0083A3DA /* TableViewFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81167D24B1092B0083A3DA /* TableViewFactoryProtocol.swift */; };
+		3F81168024B10DB70083A3DA /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81167F24B10DB70083A3DA /* UIColor+.swift */; };
+		3F81168224B118250083A3DA /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81168124B118250083A3DA /* PaymentsView.swift */; };
+		3F81168424B1182E0083A3DA /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81168324B1182E0083A3DA /* PaymentsViewController.swift */; };
+		3F81168624B118350083A3DA /* PaymentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81168524B118350083A3DA /* PaymentsInteractor.swift */; };
+		3F81168824B118430083A3DA /* PaymentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81168724B118430083A3DA /* PaymentsPresenter.swift */; };
+		3F81168A24B1184B0083A3DA /* PaymentsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81168924B1184B0083A3DA /* PaymentsWorker.swift */; };
+		3F81168C24B118540083A3DA /* PaymentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81168B24B118540083A3DA /* PaymentsRouter.swift */; };
+		3F81168E24B118610083A3DA /* PaymentsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81168D24B118610083A3DA /* PaymentsModels.swift */; };
+		3F81169024B118760083A3DA /* PaymentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81168F24B118760083A3DA /* PaymentsTableViewCell.swift */; };
+		3F81169224B118810083A3DA /* PaymentsTableViewCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81169124B118810083A3DA /* PaymentsTableViewCellBuilder.swift */; };
+		3F81169424B1188B0083A3DA /* PaymentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81169324B1188B0083A3DA /* PaymentsFactory.swift */; };
+		3F81169624B141310083A3DA /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81169524B141310083A3DA /* UITableViewCell+.swift */; };
+		3F81169824B141530083A3DA /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81169724B141530083A3DA /* UITableView+.swift */; };
+		3F81169A24B141750083A3DA /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81169924B141750083A3DA /* Typealiases.swift */; };
+		3F81169E24B142EB0083A3DA /* BaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81169D24B142EB0083A3DA /* BaseSection.swift */; };
+		3F8116A024B1436B0083A3DA /* PaymentsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81169F24B1436B0083A3DA /* PaymentsSection.swift */; };
+		3F8116A224B143B50083A3DA /* PaymentListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116A124B143B50083A3DA /* PaymentListHeaderView.swift */; };
+		3F8116A424B145F80083A3DA /* PaymentMainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116A324B145F80083A3DA /* PaymentMainHeaderView.swift */; };
+		3F8116A624B160660083A3DA /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116A524B160660083A3DA /* APIProvider.swift */; };
+		3F8116A824B23D340083A3DA /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116A724B23D340083A3DA /* String+.swift */; };
+		3F8116B024B253380083A3DA /* LoginWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116AF24B253380083A3DA /* LoginWorkerMock.swift */; };
+		3F8116B224B255F90083A3DA /* LoginInteractor+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116B124B255F90083A3DA /* LoginInteractor+Tests.swift */; };
+		3F8116B424B259150083A3DA /* LoginPresenter+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116B324B259150083A3DA /* LoginPresenter+Tests.swift */; };
+		3F8116B624B25ADE0083A3DA /* LoginViewController+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116B524B25ADE0083A3DA /* LoginViewController+Tests.swift */; };
+		3F8116B824B290E10083A3DA /* DefaultTableViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116B724B290E10083A3DA /* DefaultTableViewOutput.swift */; };
+		3F8116BA24B29E7A0083A3DA /* LocalSaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116B924B29E7A0083A3DA /* LocalSaves.swift */; };
+		3F8116C024B2AD560083A3DA /* PaymentsInteractor+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116BF24B2AD560083A3DA /* PaymentsInteractor+Tests.swift */; };
+		3F8116C224B2AD670083A3DA /* PaymentsWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116C124B2AD670083A3DA /* PaymentsWorkerMock.swift */; };
+		3F8116C624B2B2490083A3DA /* PaymentsPresenter+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116C524B2B2490083A3DA /* PaymentsPresenter+Tests.swift */; };
+		3F8116C824B2B4F40083A3DA /* PaymentsViewController+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8116C724B2B4F40083A3DA /* PaymentsViewController+Tests.swift */; };
+		497AC97E97FA38B8C5082DFA /* Pods_Accenture_Challenge_Accenture_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F11CEB32648AC6D2566827 /* Pods_Accenture_Challenge_Accenture_ChallengeUITests.framework */; };
+		4A1A3A3C4C3F151ECC6E0FDC /* Pods_Accenture_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8DDA5E4F87026AFD64A8FB /* Pods_Accenture_ChallengeTests.framework */; };
+		77CBC8DF32636F9DDA1C3C2F /* Pods_Accenture_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDF9D45DDCF9C8D4F60B72B /* Pods_Accenture_Challenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F81164224B104B80083A3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F81162324B104B60083A3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F81162A24B104B60083A3DA;
+			remoteInfo = "Accenture-Challenge";
+		};
+		3F81164D24B104B80083A3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F81162324B104B60083A3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F81162A24B104B60083A3DA;
+			remoteInfo = "Accenture-Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33F11CEB32648AC6D2566827 /* Pods_Accenture_Challenge_Accenture_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Accenture_Challenge_Accenture_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F81162B24B104B60083A3DA /* Accenture-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accenture-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F81162E24B104B60083A3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F81163024B104B60083A3DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3F81163724B104B80083A3DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F81163A24B104B80083A3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F81163C24B104B80083A3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F81164124B104B80083A3DA /* Accenture-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Accenture-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F81164524B104B80083A3DA /* Accenture_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accenture_ChallengeTests.swift; sourceTree = "<group>"; };
+		3F81164724B104B80083A3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F81164C24B104B80083A3DA /* Accenture-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Accenture-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F81165024B104B80083A3DA /* Accenture_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accenture_ChallengeUITests.swift; sourceTree = "<group>"; };
+		3F81165224B104B80083A3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F81166924B107560083A3DA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3F81166B24B107640083A3DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3F81166D24B1076F0083A3DA /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		3F81166F24B1077A0083A3DA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		3F81167124B107840083A3DA /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		3F81167324B1078E0083A3DA /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		3F81167524B107990083A3DA /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		3F81167724B107B50083A3DA /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
+		3F81167924B1086E0083A3DA /* TableViewCellBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellBuilderProtocol.swift; sourceTree = "<group>"; };
+		3F81167B24B108C40083A3DA /* TableViewSectionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionProtocol.swift; sourceTree = "<group>"; };
+		3F81167D24B1092B0083A3DA /* TableViewFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFactoryProtocol.swift; sourceTree = "<group>"; };
+		3F81167F24B10DB70083A3DA /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		3F81168124B118250083A3DA /* PaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
+		3F81168324B1182E0083A3DA /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
+		3F81168524B118350083A3DA /* PaymentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsInteractor.swift; sourceTree = "<group>"; };
+		3F81168724B118430083A3DA /* PaymentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsPresenter.swift; sourceTree = "<group>"; };
+		3F81168924B1184B0083A3DA /* PaymentsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsWorker.swift; sourceTree = "<group>"; };
+		3F81168B24B118540083A3DA /* PaymentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsRouter.swift; sourceTree = "<group>"; };
+		3F81168D24B118610083A3DA /* PaymentsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsModels.swift; sourceTree = "<group>"; };
+		3F81168F24B118760083A3DA /* PaymentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewCell.swift; sourceTree = "<group>"; };
+		3F81169124B118810083A3DA /* PaymentsTableViewCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewCellBuilder.swift; sourceTree = "<group>"; };
+		3F81169324B1188B0083A3DA /* PaymentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsFactory.swift; sourceTree = "<group>"; };
+		3F81169524B141310083A3DA /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
+		3F81169724B141530083A3DA /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		3F81169924B141750083A3DA /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		3F81169D24B142EB0083A3DA /* BaseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSection.swift; sourceTree = "<group>"; };
+		3F81169F24B1436B0083A3DA /* PaymentsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsSection.swift; sourceTree = "<group>"; };
+		3F8116A124B143B50083A3DA /* PaymentListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListHeaderView.swift; sourceTree = "<group>"; };
+		3F8116A324B145F80083A3DA /* PaymentMainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMainHeaderView.swift; sourceTree = "<group>"; };
+		3F8116A524B160660083A3DA /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		3F8116A724B23D340083A3DA /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		3F8116AF24B253380083A3DA /* LoginWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerMock.swift; sourceTree = "<group>"; };
+		3F8116B124B255F90083A3DA /* LoginInteractor+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginInteractor+Tests.swift"; sourceTree = "<group>"; };
+		3F8116B324B259150083A3DA /* LoginPresenter+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginPresenter+Tests.swift"; sourceTree = "<group>"; };
+		3F8116B524B25ADE0083A3DA /* LoginViewController+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Tests.swift"; sourceTree = "<group>"; };
+		3F8116B724B290E10083A3DA /* DefaultTableViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewOutput.swift; sourceTree = "<group>"; };
+		3F8116B924B29E7A0083A3DA /* LocalSaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSaves.swift; sourceTree = "<group>"; };
+		3F8116BF24B2AD560083A3DA /* PaymentsInteractor+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentsInteractor+Tests.swift"; sourceTree = "<group>"; };
+		3F8116C124B2AD670083A3DA /* PaymentsWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsWorkerMock.swift; sourceTree = "<group>"; };
+		3F8116C524B2B2490083A3DA /* PaymentsPresenter+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentsPresenter+Tests.swift"; sourceTree = "<group>"; };
+		3F8116C724B2B4F40083A3DA /* PaymentsViewController+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentsViewController+Tests.swift"; sourceTree = "<group>"; };
+		4047AADFF2AFFACAB205AF58 /* Pods-Accenture-ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accenture-ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-Accenture-ChallengeTests/Pods-Accenture-ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4477130E64A9F20AA15B2EC8 /* Pods-Accenture-Challenge-Accenture-ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accenture-Challenge-Accenture-ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Accenture-Challenge-Accenture-ChallengeUITests/Pods-Accenture-Challenge-Accenture-ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EDF9D45DDCF9C8D4F60B72B /* Pods_Accenture_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Accenture_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F9A4CDB8BB6AEFA6DF195EB /* Pods-Accenture-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accenture-Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Accenture-Challenge/Pods-Accenture-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		97F923821004B3C8CADC813F /* Pods-Accenture-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accenture-ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-Accenture-ChallengeTests/Pods-Accenture-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB8DDA5E4F87026AFD64A8FB /* Pods_Accenture_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Accenture_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C002C0CF1E9B5DE19F09DCC1 /* Pods-Accenture-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accenture-Challenge.release.xcconfig"; path = "Target Support Files/Pods-Accenture-Challenge/Pods-Accenture-Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		F259C5677BEA8C2F5579DD95 /* Pods-Accenture-Challenge-Accenture-ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accenture-Challenge-Accenture-ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Accenture-Challenge-Accenture-ChallengeUITests/Pods-Accenture-Challenge-Accenture-ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F81162824B104B60083A3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77CBC8DF32636F9DDA1C3C2F /* Pods_Accenture_Challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F81163E24B104B80083A3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A1A3A3C4C3F151ECC6E0FDC /* Pods_Accenture_ChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F81164924B104B80083A3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497AC97E97FA38B8C5082DFA /* Pods_Accenture_Challenge_Accenture_ChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F81162224B104B60083A3DA = {
+			isa = PBXGroup;
+			children = (
+				3F81162D24B104B60083A3DA /* Accenture-Challenge */,
+				3F81164424B104B80083A3DA /* Accenture-ChallengeTests */,
+				3F81164F24B104B80083A3DA /* Accenture-ChallengeUITests */,
+				3F81162C24B104B60083A3DA /* Products */,
+				95F45FCEBC5D483D9046A6F9 /* Pods */,
+				A9D2173B7CFED43A393629B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F81162C24B104B60083A3DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F81162B24B104B60083A3DA /* Accenture-Challenge.app */,
+				3F81164124B104B80083A3DA /* Accenture-ChallengeTests.xctest */,
+				3F81164C24B104B80083A3DA /* Accenture-ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F81162D24B104B60083A3DA /* Accenture-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				3F81163C24B104B80083A3DA /* Info.plist */,
+				3F81165F24B105570083A3DA /* App */,
+				3F81165E24B105500083A3DA /* Common */,
+				3F81166024B1055B0083A3DA /* Scenes */,
+			);
+			path = "Accenture-Challenge";
+			sourceTree = "<group>";
+		};
+		3F81164424B104B80083A3DA /* Accenture-ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F8116AE24B2532D0083A3DA /* Mocks */,
+				3F81164724B104B80083A3DA /* Info.plist */,
+				3F81164524B104B80083A3DA /* Accenture_ChallengeTests.swift */,
+				3F8116A924B253030083A3DA /* Common */,
+				3F8116AA24B253090083A3DA /* Scenes */,
+			);
+			path = "Accenture-ChallengeTests";
+			sourceTree = "<group>";
+		};
+		3F81164F24B104B80083A3DA /* Accenture-ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F81165024B104B80083A3DA /* Accenture_ChallengeUITests.swift */,
+				3F81165224B104B80083A3DA /* Info.plist */,
+			);
+			path = "Accenture-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		3F81165E24B105500083A3DA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3F81166624B105A80083A3DA /* Protocols */,
+				3F81166524B1059A0083A3DA /* Extensions */,
+				3F81166324B1058D0083A3DA /* Utilities */,
+				3F81166224B105880083A3DA /* API */,
+				3F81166124B105840083A3DA /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3F81165F24B105570083A3DA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3F81162E24B104B60083A3DA /* AppDelegate.swift */,
+				3F81163024B104B60083A3DA /* SceneDelegate.swift */,
+				3F81163724B104B80083A3DA /* Assets.xcassets */,
+				3F81163924B104B80083A3DA /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3F81166024B1055B0083A3DA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3F81166724B105C30083A3DA /* Login */,
+				3F81166824B107420083A3DA /* Payments */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3F81166124B105840083A3DA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3F81169C24B142E00083A3DA /* Components */,
+				3F81169B24B142DA0083A3DA /* Sections */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3F81166224B105880083A3DA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3F8116A524B160660083A3DA /* APIProvider.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3F81166324B1058D0083A3DA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3F81169924B141750083A3DA /* Typealiases.swift */,
+				3F8116B724B290E10083A3DA /* DefaultTableViewOutput.swift */,
+				3F8116B924B29E7A0083A3DA /* LocalSaves.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3F81166524B1059A0083A3DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F81167F24B10DB70083A3DA /* UIColor+.swift */,
+				3F81169524B141310083A3DA /* UITableViewCell+.swift */,
+				3F81169724B141530083A3DA /* UITableView+.swift */,
+				3F8116A724B23D340083A3DA /* String+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3F81166624B105A80083A3DA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3F81167724B107B50083A3DA /* ViewCodeProtocol.swift */,
+				3F81167924B1086E0083A3DA /* TableViewCellBuilderProtocol.swift */,
+				3F81167B24B108C40083A3DA /* TableViewSectionProtocol.swift */,
+				3F81167D24B1092B0083A3DA /* TableViewFactoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3F81166724B105C30083A3DA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3F81166D24B1076F0083A3DA /* LoginInteractor.swift */,
+				3F81167524B107990083A3DA /* LoginModels.swift */,
+				3F81166F24B1077A0083A3DA /* LoginPresenter.swift */,
+				3F81167324B1078E0083A3DA /* LoginRouter.swift */,
+				3F81166924B107560083A3DA /* LoginView.swift */,
+				3F81166B24B107640083A3DA /* LoginViewController.swift */,
+				3F81167124B107840083A3DA /* LoginWorker.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3F81166824B107420083A3DA /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				3F81169324B1188B0083A3DA /* PaymentsFactory.swift */,
+				3F81168524B118350083A3DA /* PaymentsInteractor.swift */,
+				3F81168D24B118610083A3DA /* PaymentsModels.swift */,
+				3F81168724B118430083A3DA /* PaymentsPresenter.swift */,
+				3F81168B24B118540083A3DA /* PaymentsRouter.swift */,
+				3F81168F24B118760083A3DA /* PaymentsTableViewCell.swift */,
+				3F81169124B118810083A3DA /* PaymentsTableViewCellBuilder.swift */,
+				3F81168124B118250083A3DA /* PaymentsView.swift */,
+				3F81168324B1182E0083A3DA /* PaymentsViewController.swift */,
+				3F81168924B1184B0083A3DA /* PaymentsWorker.swift */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
+		3F81169B24B142DA0083A3DA /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				3F81169D24B142EB0083A3DA /* BaseSection.swift */,
+				3F81169F24B1436B0083A3DA /* PaymentsSection.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		3F81169C24B142E00083A3DA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3F8116A124B143B50083A3DA /* PaymentListHeaderView.swift */,
+				3F8116A324B145F80083A3DA /* PaymentMainHeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3F8116A924B253030083A3DA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3F8116AA24B253090083A3DA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3F8116BC24B2AD1E0083A3DA /* Payments */,
+				3F8116AB24B253120083A3DA /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3F8116AB24B253120083A3DA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3F8116B124B255F90083A3DA /* LoginInteractor+Tests.swift */,
+				3F8116B324B259150083A3DA /* LoginPresenter+Tests.swift */,
+				3F8116B524B25ADE0083A3DA /* LoginViewController+Tests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3F8116AE24B2532D0083A3DA /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3F8116AF24B253380083A3DA /* LoginWorkerMock.swift */,
+				3F8116C124B2AD670083A3DA /* PaymentsWorkerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3F8116BC24B2AD1E0083A3DA /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				3F8116BF24B2AD560083A3DA /* PaymentsInteractor+Tests.swift */,
+				3F8116C524B2B2490083A3DA /* PaymentsPresenter+Tests.swift */,
+				3F8116C724B2B4F40083A3DA /* PaymentsViewController+Tests.swift */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
+		95F45FCEBC5D483D9046A6F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F9A4CDB8BB6AEFA6DF195EB /* Pods-Accenture-Challenge.debug.xcconfig */,
+				C002C0CF1E9B5DE19F09DCC1 /* Pods-Accenture-Challenge.release.xcconfig */,
+				4477130E64A9F20AA15B2EC8 /* Pods-Accenture-Challenge-Accenture-ChallengeUITests.debug.xcconfig */,
+				F259C5677BEA8C2F5579DD95 /* Pods-Accenture-Challenge-Accenture-ChallengeUITests.release.xcconfig */,
+				4047AADFF2AFFACAB205AF58 /* Pods-Accenture-ChallengeTests.debug.xcconfig */,
+				97F923821004B3C8CADC813F /* Pods-Accenture-ChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9D2173B7CFED43A393629B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EDF9D45DDCF9C8D4F60B72B /* Pods_Accenture_Challenge.framework */,
+				33F11CEB32648AC6D2566827 /* Pods_Accenture_Challenge_Accenture_ChallengeUITests.framework */,
+				AB8DDA5E4F87026AFD64A8FB /* Pods_Accenture_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F81162A24B104B60083A3DA /* Accenture-Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F81165524B104B80083A3DA /* Build configuration list for PBXNativeTarget "Accenture-Challenge" */;
+			buildPhases = (
+				5EA9D68D6651B9D792377D77 /* [CP] Check Pods Manifest.lock */,
+				3F81162724B104B60083A3DA /* Sources */,
+				3F81162824B104B60083A3DA /* Frameworks */,
+				3F81162924B104B60083A3DA /* Resources */,
+				9B3788CE327AE525BBCDA49E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Accenture-Challenge";
+			productName = "Accenture-Challenge";
+			productReference = 3F81162B24B104B60083A3DA /* Accenture-Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F81164024B104B80083A3DA /* Accenture-ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F81165824B104B80083A3DA /* Build configuration list for PBXNativeTarget "Accenture-ChallengeTests" */;
+			buildPhases = (
+				1CA2D9E788DE3CD569429012 /* [CP] Check Pods Manifest.lock */,
+				3F81163D24B104B80083A3DA /* Sources */,
+				3F81163E24B104B80083A3DA /* Frameworks */,
+				3F81163F24B104B80083A3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F81164324B104B80083A3DA /* PBXTargetDependency */,
+			);
+			name = "Accenture-ChallengeTests";
+			productName = "Accenture-ChallengeTests";
+			productReference = 3F81164124B104B80083A3DA /* Accenture-ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F81164B24B104B80083A3DA /* Accenture-ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F81165B24B104B80083A3DA /* Build configuration list for PBXNativeTarget "Accenture-ChallengeUITests" */;
+			buildPhases = (
+				98172C760B49F02F7B3E135F /* [CP] Check Pods Manifest.lock */,
+				3F81164824B104B80083A3DA /* Sources */,
+				3F81164924B104B80083A3DA /* Frameworks */,
+				3F81164A24B104B80083A3DA /* Resources */,
+				DFA27EFDDFE624B73F5B7B6A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F81164E24B104B80083A3DA /* PBXTargetDependency */,
+			);
+			name = "Accenture-ChallengeUITests";
+			productName = "Accenture-ChallengeUITests";
+			productReference = 3F81164C24B104B80083A3DA /* Accenture-ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F81162324B104B60083A3DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Pedro Alvarez";
+				TargetAttributes = {
+					3F81162A24B104B60083A3DA = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					3F81164024B104B80083A3DA = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 3F81162A24B104B60083A3DA;
+					};
+					3F81164B24B104B80083A3DA = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 3F81162A24B104B60083A3DA;
+					};
+				};
+			};
+			buildConfigurationList = 3F81162624B104B60083A3DA /* Build configuration list for PBXProject "Accenture-Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F81162224B104B60083A3DA;
+			productRefGroup = 3F81162C24B104B60083A3DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F81162A24B104B60083A3DA /* Accenture-Challenge */,
+				3F81164024B104B80083A3DA /* Accenture-ChallengeTests */,
+				3F81164B24B104B80083A3DA /* Accenture-ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F81162924B104B60083A3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F81163B24B104B80083A3DA /* LaunchScreen.storyboard in Resources */,
+				3F81163824B104B80083A3DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F81163F24B104B80083A3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F81164A24B104B80083A3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CA2D9E788DE3CD569429012 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Accenture-ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EA9D68D6651B9D792377D77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Accenture-Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98172C760B49F02F7B3E135F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Accenture-Challenge-Accenture-ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B3788CE327AE525BBCDA49E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Accenture-Challenge/Pods-Accenture-Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Accenture-Challenge/Pods-Accenture-Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Accenture-Challenge/Pods-Accenture-Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFA27EFDDFE624B73F5B7B6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Accenture-Challenge-Accenture-ChallengeUITests/Pods-Accenture-Challenge-Accenture-ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Accenture-Challenge-Accenture-ChallengeUITests/Pods-Accenture-Challenge-Accenture-ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Accenture-Challenge-Accenture-ChallengeUITests/Pods-Accenture-Challenge-Accenture-ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F81162724B104B60083A3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F81167024B1077A0083A3DA /* LoginPresenter.swift in Sources */,
+				3F81166C24B107640083A3DA /* LoginViewController.swift in Sources */,
+				3F81168A24B1184B0083A3DA /* PaymentsWorker.swift in Sources */,
+				3F8116A024B1436B0083A3DA /* PaymentsSection.swift in Sources */,
+				3F81167224B107840083A3DA /* LoginWorker.swift in Sources */,
+				3F81169224B118810083A3DA /* PaymentsTableViewCellBuilder.swift in Sources */,
+				3F8116B824B290E10083A3DA /* DefaultTableViewOutput.swift in Sources */,
+				3F81167E24B1092B0083A3DA /* TableViewFactoryProtocol.swift in Sources */,
+				3F8116A824B23D340083A3DA /* String+.swift in Sources */,
+				3F81168C24B118540083A3DA /* PaymentsRouter.swift in Sources */,
+				3F81169824B141530083A3DA /* UITableView+.swift in Sources */,
+				3F81169E24B142EB0083A3DA /* BaseSection.swift in Sources */,
+				3F81169024B118760083A3DA /* PaymentsTableViewCell.swift in Sources */,
+				3F81168224B118250083A3DA /* PaymentsView.swift in Sources */,
+				3F81169424B1188B0083A3DA /* PaymentsFactory.swift in Sources */,
+				3F81168E24B118610083A3DA /* PaymentsModels.swift in Sources */,
+				3F81166A24B107560083A3DA /* LoginView.swift in Sources */,
+				3F8116BA24B29E7A0083A3DA /* LocalSaves.swift in Sources */,
+				3F81162F24B104B60083A3DA /* AppDelegate.swift in Sources */,
+				3F81168424B1182E0083A3DA /* PaymentsViewController.swift in Sources */,
+				3F8116A624B160660083A3DA /* APIProvider.swift in Sources */,
+				3F81166E24B1076F0083A3DA /* LoginInteractor.swift in Sources */,
+				3F81168824B118430083A3DA /* PaymentsPresenter.swift in Sources */,
+				3F81167624B107990083A3DA /* LoginModels.swift in Sources */,
+				3F81167C24B108C40083A3DA /* TableViewSectionProtocol.swift in Sources */,
+				3F81168624B118350083A3DA /* PaymentsInteractor.swift in Sources */,
+				3F8116A224B143B50083A3DA /* PaymentListHeaderView.swift in Sources */,
+				3F8116A424B145F80083A3DA /* PaymentMainHeaderView.swift in Sources */,
+				3F81167824B107B50083A3DA /* ViewCodeProtocol.swift in Sources */,
+				3F81167424B1078E0083A3DA /* LoginRouter.swift in Sources */,
+				3F81163124B104B60083A3DA /* SceneDelegate.swift in Sources */,
+				3F81169A24B141750083A3DA /* Typealiases.swift in Sources */,
+				3F81167A24B1086E0083A3DA /* TableViewCellBuilderProtocol.swift in Sources */,
+				3F81169624B141310083A3DA /* UITableViewCell+.swift in Sources */,
+				3F81168024B10DB70083A3DA /* UIColor+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F81163D24B104B80083A3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8116B424B259150083A3DA /* LoginPresenter+Tests.swift in Sources */,
+				3F8116C024B2AD560083A3DA /* PaymentsInteractor+Tests.swift in Sources */,
+				3F8116C824B2B4F40083A3DA /* PaymentsViewController+Tests.swift in Sources */,
+				3F8116B224B255F90083A3DA /* LoginInteractor+Tests.swift in Sources */,
+				3F8116B024B253380083A3DA /* LoginWorkerMock.swift in Sources */,
+				3F8116C224B2AD670083A3DA /* PaymentsWorkerMock.swift in Sources */,
+				3F8116B624B25ADE0083A3DA /* LoginViewController+Tests.swift in Sources */,
+				3F81164624B104B80083A3DA /* Accenture_ChallengeTests.swift in Sources */,
+				3F8116C624B2B2490083A3DA /* PaymentsPresenter+Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F81164824B104B80083A3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F81165124B104B80083A3DA /* Accenture_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F81164324B104B80083A3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F81162A24B104B60083A3DA /* Accenture-Challenge */;
+			targetProxy = 3F81164224B104B80083A3DA /* PBXContainerItemProxy */;
+		};
+		3F81164E24B104B80083A3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F81162A24B104B60083A3DA /* Accenture-Challenge */;
+			targetProxy = 3F81164D24B104B80083A3DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F81163924B104B80083A3DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F81163A24B104B80083A3DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F81165324B104B80083A3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F81165424B104B80083A3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F81165624B104B80083A3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F9A4CDB8BB6AEFA6DF195EB /* Pods-Accenture-Challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L332B28T9P;
+				INFOPLIST_FILE = "Accenture-Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pedro.alvarez.Accenture-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3F81165724B104B80083A3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C002C0CF1E9B5DE19F09DCC1 /* Pods-Accenture-Challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L332B28T9P;
+				INFOPLIST_FILE = "Accenture-Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pedro.alvarez.Accenture-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3F81165924B104B80083A3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4047AADFF2AFFACAB205AF58 /* Pods-Accenture-ChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L332B28T9P;
+				INFOPLIST_FILE = "Accenture-ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pedro.alvarez.Accenture-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Accenture-Challenge.app/Accenture-Challenge";
+			};
+			name = Debug;
+		};
+		3F81165A24B104B80083A3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F923821004B3C8CADC813F /* Pods-Accenture-ChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L332B28T9P;
+				INFOPLIST_FILE = "Accenture-ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pedro.alvarez.Accenture-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Accenture-Challenge.app/Accenture-Challenge";
+			};
+			name = Release;
+		};
+		3F81165C24B104B80083A3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4477130E64A9F20AA15B2EC8 /* Pods-Accenture-Challenge-Accenture-ChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L332B28T9P;
+				INFOPLIST_FILE = "Accenture-ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pedro.alvarez.Accenture-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Accenture-Challenge";
+			};
+			name = Debug;
+		};
+		3F81165D24B104B80083A3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F259C5677BEA8C2F5579DD95 /* Pods-Accenture-Challenge-Accenture-ChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L332B28T9P;
+				INFOPLIST_FILE = "Accenture-ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pedro.alvarez.Accenture-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Accenture-Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F81162624B104B60083A3DA /* Build configuration list for PBXProject "Accenture-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F81165324B104B80083A3DA /* Debug */,
+				3F81165424B104B80083A3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F81165524B104B80083A3DA /* Build configuration list for PBXNativeTarget "Accenture-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F81165624B104B80083A3DA /* Debug */,
+				3F81165724B104B80083A3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F81165824B104B80083A3DA /* Build configuration list for PBXNativeTarget "Accenture-ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F81165924B104B80083A3DA /* Debug */,
+				3F81165A24B104B80083A3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F81165B24B104B80083A3DA /* Build configuration list for PBXNativeTarget "Accenture-ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F81165C24B104B80083A3DA /* Debug */,
+				3F81165D24B104B80083A3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F81162324B104B60083A3DA /* Project object */;
+}

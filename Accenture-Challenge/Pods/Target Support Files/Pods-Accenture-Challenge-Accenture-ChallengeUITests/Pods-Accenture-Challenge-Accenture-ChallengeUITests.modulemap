@@ -1,0 +1,6 @@
+framework module Pods_Accenture_Challenge_Accenture_ChallengeUITests {
+  umbrella header "Pods-Accenture-Challenge-Accenture-ChallengeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

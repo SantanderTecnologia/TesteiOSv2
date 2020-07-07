@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Accenture-Challenge' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Accenture-Challenge
+	pod 'Alamofire', '~> 4.8.2'
+	pod 'SDWebImage', '~> 5.0.2'
+	pod 'ObjectMapper', '~> 3.4.2'
+	pod 'SnapKit', '~> 5.0.1'
+  	pod 'RxSwift', '~> 5.1.1'
+	
+  target 'Accenture-ChallengeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Accenture-ChallengeUITests' do
+    # Pods for testing
+  end
+
+end

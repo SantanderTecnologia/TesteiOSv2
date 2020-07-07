@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "3817562E-CBB6-4CAD-BBCF-FD468BAA446F@1x.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "3817562E-CBB6-4CAD-BBCF-FD468BAA446F@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "3817562E-CBB6-4CAD-BBCF-FD468BAA446F@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
