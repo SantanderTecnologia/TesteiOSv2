@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+def shared_testing_pds
+  pod 'Nimble'
+  pod 'Nimble-Snapshots'
+  pod 'Quick'
+end
+
+target 'SantanderTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+	pod "PromiseKit"
+  pod 'SVProgressHUD'
+  pod 'SnapKit'
+  pod 'SwiftKeychainWrapper'
+  # Pods for SantanderTest
+
+  target 'SantanderTestTests' do
+    inherit! :search_paths
+    shared_testing_pds
+  end
+
+  target 'SantanderTestUITests' do
+    shared_testing_pds
+    pod 'KIF'
+  end
+
+end

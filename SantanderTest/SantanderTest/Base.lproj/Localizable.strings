@@ -1,0 +1,26 @@
+/*
+    MARK: ERROR
+ */
+"invalid_password" = "A senha tem que ter pelo menos uma letra maiuscula, um caracter especial e um caracter alfanumérico";
+"empty_fields" = "Ambos os campos devem ser preenchidos";
+"alert_title" = "Erro";
+
+
+/*
+    MARK: LOGIN
+*/
+"login_button" = "Login";
+"login_user" = "User";
+"login_password" = "Password";
+
+
+/*
+    MARK: STATMENT HEADER VIEW
+*/
+"account_label" = "Conta";
+"balance_label" = "Saldo";
+
+/*
+    MARK: STATMENT SECTION VIEW
+*/
+"section_title" = "Recentes";
