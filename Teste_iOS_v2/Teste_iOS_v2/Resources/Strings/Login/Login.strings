@@ -1,0 +1,18 @@
+/* 
+  Login.strings
+  Teste_iOS_v2
+
+  Created by Lucas Fernandes Araujo on 01/08/20.
+  Copyright © 2020 Lucas Fernandes Araujo. All rights reserved.
+*/
+
+// Mensagens de erro
+"error_title" = "Atenção!";
+"error_button_title" = "Entendi";
+
+"uncompleted_fields_message" = "É necessário preencher todos os campos";
+
+"wrong_fields_message"= "Usuário ou senha incorreto";
+
+"login_authentication_error_title" = "Ops!";
+"login_authentication_error_message" = "Não foi possível concluir a solicitação";
