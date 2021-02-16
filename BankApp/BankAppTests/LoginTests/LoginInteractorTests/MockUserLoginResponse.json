@@ -1,0 +1,10 @@
+{
+    "userAccount": {
+        "userId": 29,
+        "name": "Joao Usuario de Teste Teste",
+        "bankAccount": "2050",
+        "agency": "012314564",
+        "balance": 3.3445
+    },
+    "error": {}
+}
