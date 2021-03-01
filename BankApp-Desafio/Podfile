@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'BankApp-Desafio' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'SwiftKeychainWrapper'
+
+  # Pods for BankApp-Desafio
+
+  target 'BankApp-DesafioTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'BankApp-DesafioUITests' do
+    # Pods for testing
+  end
+
+end
