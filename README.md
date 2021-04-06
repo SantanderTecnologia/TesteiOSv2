@@ -1,3 +1,13 @@
+# BankApp
+Este app foi criado como um dos requisitos para a vaga de desenvolvedor iOS na Accenture. 
+Foi utilizado Autolayout com Storyboards e Alamofire para requisições HTTP GET e POST.
+
+<p align="center">
+  <img src="https://github.com/AdrianoAntoniev/TesteiOSv2/blob/master/output.gif?raw=true" alt="App gif"/>
+</p>
+
+**O README original, descrevendo o que deve ser feito, encontra-se abaixo:**
+
 # Show me the code
 
 Esse repositório contem todo o material necessário para realizar o teste: 
