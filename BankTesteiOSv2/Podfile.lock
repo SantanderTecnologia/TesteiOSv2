@@ -1,0 +1,79 @@
+PODS:
+  - Alamofire (5.4.2)
+  - BankStatementLibrary (1.0.6):
+    - ModelsLibrary
+    - RxAlamofire (= 6.1.1)
+    - RxCocoa (= 6.1.0)
+    - RxSwift (= 6.1.0)
+    - ServicesLibrary
+    - WorkersLibrary
+  - LoginLibrary (1.2.5):
+    - BankStatementLibrary
+    - ModelsLibrary
+    - RxAlamofire (= 6.1.1)
+    - RxCocoa (= 6.1.0)
+    - RxSwift (= 6.1.0)
+    - ServicesLibrary
+    - WorkersLibrary
+  - ModelsLibrary (1.1.2)
+  - RxAlamofire (6.1.1):
+    - RxAlamofire/Core (= 6.1.1)
+  - RxAlamofire/Core (6.1.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - ServicesLibrary (1.1.3):
+    - ModelsLibrary
+    - RxAlamofire (= 6.1.1)
+    - RxCocoa (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - WorkersLibrary (1.1.5):
+    - ModelsLibrary
+
+DEPENDENCIES:
+  - BankStatementLibrary (from `~/Desktop/TesteiOSv2/Projects/Pods/BankStatementLibrary`)
+  - LoginLibrary (from `~/Desktop/TesteiOSv2/Projects/Pods/LoginLibrary`)
+  - ModelsLibrary (from `~/Desktop/TesteiOSv2/Projects/Pods/ModelsLibrary`)
+  - ServicesLibrary (from `~/Desktop/TesteiOSv2/Projects/Pods/ServicesLibrary`)
+  - WorkersLibrary (from `~/Desktop/TesteiOSv2/Projects/Pods/WorkersLibrary`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxAlamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  BankStatementLibrary:
+    :path: "~/Desktop/TesteiOSv2/Projects/Pods/BankStatementLibrary"
+  LoginLibrary:
+    :path: "~/Desktop/TesteiOSv2/Projects/Pods/LoginLibrary"
+  ModelsLibrary:
+    :path: "~/Desktop/TesteiOSv2/Projects/Pods/ModelsLibrary"
+  ServicesLibrary:
+    :path: "~/Desktop/TesteiOSv2/Projects/Pods/ServicesLibrary"
+  WorkersLibrary:
+    :path: "~/Desktop/TesteiOSv2/Projects/Pods/WorkersLibrary"
+
+SPEC CHECKSUMS:
+  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  BankStatementLibrary: d1766e0af9cda8b83db30df7c15fa6494d948544
+  LoginLibrary: e2c7429ca339d5124cf7a7e024e1867d8f2bbba1
+  ModelsLibrary: a43b06326059e33a391dc99ec4bc76752e804ed5
+  RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  ServicesLibrary: 0d1d04571f90c1ed9f0057c098beb9befc4185ef
+  WorkersLibrary: 6f5b19187f95cd5ba5621887f7da95226fbea6c6
+
+PODFILE CHECKSUM: f54ed77120b8332107a6ac58af3812a0ab8d1404
+
+COCOAPODS: 1.10.0

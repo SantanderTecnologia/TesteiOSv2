@@ -1,0 +1,6 @@
+framework module ModelsLibrary {
+  umbrella header "ModelsLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

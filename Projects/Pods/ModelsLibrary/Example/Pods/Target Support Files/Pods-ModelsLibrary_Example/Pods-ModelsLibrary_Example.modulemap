@@ -1,0 +1,6 @@
+module Pods_ModelsLibrary_Example {
+  umbrella header "Pods-ModelsLibrary_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

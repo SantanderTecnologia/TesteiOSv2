@@ -1,0 +1,871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40C4D689260A747600ABF184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4D688260A747600ABF184 /* AppDelegate.swift */; };
+		40C4D68B260A747600ABF184 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4D68A260A747600ABF184 /* SceneDelegate.swift */; };
+		40C4D693260A747600ABF184 /* BankTesteiOSv2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40C4D691260A747600ABF184 /* BankTesteiOSv2.xcdatamodeld */; };
+		40C4D695260A747800ABF184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C4D694260A747800ABF184 /* Assets.xcassets */; };
+		40C4D698260A747800ABF184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C4D696260A747800ABF184 /* LaunchScreen.storyboard */; };
+		40C4D6A3260A747900ABF184 /* BankTesteiOSv2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4D6A2260A747900ABF184 /* BankTesteiOSv2Tests.swift */; };
+		40C4D6AE260A747900ABF184 /* BankTesteiOSv2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4D6AD260A747900ABF184 /* BankTesteiOSv2UITests.swift */; };
+		49996AEA1FD11CA8266B030B /* libPods-BankTesteiOSv2UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CD57337F2BD2546EAFCB13 /* libPods-BankTesteiOSv2UITests.a */; };
+		D0867996F268DAAE4CC30743 /* Pods_BankTesteiOSv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1888F53945F90B447645AE /* Pods_BankTesteiOSv2.framework */; };
+		EE0F980F1016F1FF6E2FA848 /* libPods-BankTesteiOSv2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662FAC914F45B20A37D372B /* libPods-BankTesteiOSv2Tests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40C4D69F260A747900ABF184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C4D67D260A747600ABF184 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C4D684260A747600ABF184;
+			remoteInfo = BankTesteiOSv2;
+		};
+		40C4D6AA260A747900ABF184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C4D67D260A747600ABF184 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C4D684260A747600ABF184;
+			remoteInfo = BankTesteiOSv2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		168DD1D665A28926FE512C32 /* Pods-BankTesteiOSv2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankTesteiOSv2.debug.xcconfig"; path = "Target Support Files/Pods-BankTesteiOSv2/Pods-BankTesteiOSv2.debug.xcconfig"; sourceTree = "<group>"; };
+		3F46982230774EA519E27C2E /* Pods-BankTesteiOSv2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankTesteiOSv2Tests.release.xcconfig"; path = "Target Support Files/Pods-BankTesteiOSv2Tests/Pods-BankTesteiOSv2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		40C4D685260A747600ABF184 /* BankTesteiOSv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankTesteiOSv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C4D688260A747600ABF184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40C4D68A260A747600ABF184 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		40C4D692260A747600ABF184 /* BankTesteiOSv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BankTesteiOSv2.xcdatamodel; sourceTree = "<group>"; };
+		40C4D694260A747800ABF184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40C4D697260A747800ABF184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40C4D699260A747800ABF184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C4D69E260A747900ABF184 /* BankTesteiOSv2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankTesteiOSv2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C4D6A2260A747900ABF184 /* BankTesteiOSv2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTesteiOSv2Tests.swift; sourceTree = "<group>"; };
+		40C4D6A4260A747900ABF184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C4D6A9260A747900ABF184 /* BankTesteiOSv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankTesteiOSv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C4D6AD260A747900ABF184 /* BankTesteiOSv2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTesteiOSv2UITests.swift; sourceTree = "<group>"; };
+		40C4D6AF260A747900ABF184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6840ED114C1A4C20007AB8B9 /* Pods-BankTesteiOSv2-BankTesteiOSv2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankTesteiOSv2-BankTesteiOSv2UITests.debug.xcconfig"; path = "Target Support Files/Pods-BankTesteiOSv2-BankTesteiOSv2UITests/Pods-BankTesteiOSv2-BankTesteiOSv2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9662FAC914F45B20A37D372B /* libPods-BankTesteiOSv2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankTesteiOSv2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B900EBA2713F3392B4DFCBBB /* Pods-BankTesteiOSv2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankTesteiOSv2Tests.debug.xcconfig"; path = "Target Support Files/Pods-BankTesteiOSv2Tests/Pods-BankTesteiOSv2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2539FA57DB4F0BA6E172925 /* Pods-BankTesteiOSv2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankTesteiOSv2UITests.release.xcconfig"; path = "Target Support Files/Pods-BankTesteiOSv2UITests/Pods-BankTesteiOSv2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		D5CD57337F2BD2546EAFCB13 /* libPods-BankTesteiOSv2UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankTesteiOSv2UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF45984D5253CE63899FCC6A /* Pods-BankTesteiOSv2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankTesteiOSv2UITests.debug.xcconfig"; path = "Target Support Files/Pods-BankTesteiOSv2UITests/Pods-BankTesteiOSv2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7E269C81C2FBF538E6F9A14 /* Pods-BankTesteiOSv2-BankTesteiOSv2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankTesteiOSv2-BankTesteiOSv2UITests.release.xcconfig"; path = "Target Support Files/Pods-BankTesteiOSv2-BankTesteiOSv2UITests/Pods-BankTesteiOSv2-BankTesteiOSv2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		EA1888F53945F90B447645AE /* Pods_BankTesteiOSv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankTesteiOSv2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F646826F9C31ABA74FC73820 /* Pods-BankTesteiOSv2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankTesteiOSv2.release.xcconfig"; path = "Target Support Files/Pods-BankTesteiOSv2/Pods-BankTesteiOSv2.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40C4D682260A747600ABF184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0867996F268DAAE4CC30743 /* Pods_BankTesteiOSv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4D69B260A747900ABF184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0F980F1016F1FF6E2FA848 /* libPods-BankTesteiOSv2Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4D6A6260A747900ABF184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49996AEA1FD11CA8266B030B /* libPods-BankTesteiOSv2UITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A72CA64A86EE9DFE03A5DE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA1888F53945F90B447645AE /* Pods_BankTesteiOSv2.framework */,
+				9662FAC914F45B20A37D372B /* libPods-BankTesteiOSv2Tests.a */,
+				D5CD57337F2BD2546EAFCB13 /* libPods-BankTesteiOSv2UITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40313578260CFC1500D71A83 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
+		408B3FDD262080FF0042231E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		408B3FDE262081090042231E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		408B3FDF262081120042231E /* BankStatement */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BankStatement;
+			sourceTree = "<group>";
+		};
+		409283DD260B7D5D009E9C99 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		409284D1260BDFDE009E9C99 /* class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		409284EF260CA99E009E9C99 /* struct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = struct;
+			sourceTree = "<group>";
+		};
+		40928510260CAD30009E9C99 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		40C4D67C260A747600ABF184 = {
+			isa = PBXGroup;
+			children = (
+				40C4D687260A747600ABF184 /* BankTesteiOSv2 */,
+				40C4D6A1260A747900ABF184 /* BankTesteiOSv2Tests */,
+				40C4D6AC260A747900ABF184 /* BankTesteiOSv2UITests */,
+				40C4D686260A747600ABF184 /* Products */,
+				9CE717E3EF0E91302D4FDC01 /* Pods */,
+				3A72CA64A86EE9DFE03A5DE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		40C4D686260A747600ABF184 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40C4D685260A747600ABF184 /* BankTesteiOSv2.app */,
+				40C4D69E260A747900ABF184 /* BankTesteiOSv2Tests.xctest */,
+				40C4D6A9260A747900ABF184 /* BankTesteiOSv2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40C4D687260A747600ABF184 /* BankTesteiOSv2 */ = {
+			isa = PBXGroup;
+			children = (
+				40C4D77E260A8E6D00ABF184 /* Services */,
+				40C4D77F260A8E7600ABF184 /* Workers */,
+				40C4D77D260A8E6100ABF184 /* Models */,
+				40C4D780260A8E8000ABF184 /* Scenes */,
+				40C4D688260A747600ABF184 /* AppDelegate.swift */,
+				40C4D68A260A747600ABF184 /* SceneDelegate.swift */,
+				40C4D694260A747800ABF184 /* Assets.xcassets */,
+				40C4D699260A747800ABF184 /* Info.plist */,
+				40C4D691260A747600ABF184 /* BankTesteiOSv2.xcdatamodeld */,
+			);
+			path = BankTesteiOSv2;
+			sourceTree = "<group>";
+		};
+		40C4D6A1260A747900ABF184 /* BankTesteiOSv2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				40C4D6A2260A747900ABF184 /* BankTesteiOSv2Tests.swift */,
+				40C4D6A4260A747900ABF184 /* Info.plist */,
+			);
+			path = BankTesteiOSv2Tests;
+			sourceTree = "<group>";
+		};
+		40C4D6AC260A747900ABF184 /* BankTesteiOSv2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				40C4D6AD260A747900ABF184 /* BankTesteiOSv2UITests.swift */,
+				40C4D6AF260A747900ABF184 /* Info.plist */,
+			);
+			path = BankTesteiOSv2UITests;
+			sourceTree = "<group>";
+		};
+		40C4D6C7260A76F600ABF184 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		40C4D6E7260A785F00ABF184 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				40C4D696260A747800ABF184 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		40C4D741260A864000ABF184 /* BankStatement */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BankStatement;
+			sourceTree = "<group>";
+		};
+		40C4D77D260A8E6100ABF184 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				408B3FDD262080FF0042231E /* Shared */,
+				408B3FDE262081090042231E /* Login */,
+				408B3FDF262081120042231E /* BankStatement */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		40C4D77E260A8E6D00ABF184 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		40C4D77F260A8E7600ABF184 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				409283DD260B7D5D009E9C99 /* extension */,
+				40C4D799260A90F700ABF184 /* var */,
+				40313578260CFC1500D71A83 /* enum */,
+				409284EF260CA99E009E9C99 /* struct */,
+				40928510260CAD30009E9C99 /* protocol */,
+				409284D1260BDFDE009E9C99 /* class */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		40C4D780260A8E8000ABF184 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				40C4D6E7260A785F00ABF184 /* Storyboard */,
+				40C4D6C7260A76F600ABF184 /* Login */,
+				40C4D741260A864000ABF184 /* BankStatement */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		40C4D799260A90F700ABF184 /* var */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = var;
+			sourceTree = "<group>";
+		};
+		9CE717E3EF0E91302D4FDC01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				168DD1D665A28926FE512C32 /* Pods-BankTesteiOSv2.debug.xcconfig */,
+				F646826F9C31ABA74FC73820 /* Pods-BankTesteiOSv2.release.xcconfig */,
+				6840ED114C1A4C20007AB8B9 /* Pods-BankTesteiOSv2-BankTesteiOSv2UITests.debug.xcconfig */,
+				E7E269C81C2FBF538E6F9A14 /* Pods-BankTesteiOSv2-BankTesteiOSv2UITests.release.xcconfig */,
+				B900EBA2713F3392B4DFCBBB /* Pods-BankTesteiOSv2Tests.debug.xcconfig */,
+				3F46982230774EA519E27C2E /* Pods-BankTesteiOSv2Tests.release.xcconfig */,
+				DF45984D5253CE63899FCC6A /* Pods-BankTesteiOSv2UITests.debug.xcconfig */,
+				C2539FA57DB4F0BA6E172925 /* Pods-BankTesteiOSv2UITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40C4D684260A747600ABF184 /* BankTesteiOSv2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C4D6B2260A747900ABF184 /* Build configuration list for PBXNativeTarget "BankTesteiOSv2" */;
+			buildPhases = (
+				579DB4664CCAC78824D2DF33 /* [CP] Check Pods Manifest.lock */,
+				40C4D681260A747600ABF184 /* Sources */,
+				40C4D682260A747600ABF184 /* Frameworks */,
+				40C4D683260A747600ABF184 /* Resources */,
+				A305149BCDBE8E8FA5994A3C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankTesteiOSv2;
+			productName = BankTesteiOSv2;
+			productReference = 40C4D685260A747600ABF184 /* BankTesteiOSv2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40C4D69D260A747900ABF184 /* BankTesteiOSv2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C4D6B5260A747900ABF184 /* Build configuration list for PBXNativeTarget "BankTesteiOSv2Tests" */;
+			buildPhases = (
+				942FA9BD0599944140D4A819 /* [CP] Check Pods Manifest.lock */,
+				40C4D69A260A747900ABF184 /* Sources */,
+				40C4D69B260A747900ABF184 /* Frameworks */,
+				40C4D69C260A747900ABF184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40C4D6A0260A747900ABF184 /* PBXTargetDependency */,
+			);
+			name = BankTesteiOSv2Tests;
+			productName = BankTesteiOSv2Tests;
+			productReference = 40C4D69E260A747900ABF184 /* BankTesteiOSv2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		40C4D6A8260A747900ABF184 /* BankTesteiOSv2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C4D6B8260A747900ABF184 /* Build configuration list for PBXNativeTarget "BankTesteiOSv2UITests" */;
+			buildPhases = (
+				9D6DA00EF6AECF68C8031315 /* [CP] Check Pods Manifest.lock */,
+				40C4D6A5260A747900ABF184 /* Sources */,
+				40C4D6A6260A747900ABF184 /* Frameworks */,
+				40C4D6A7260A747900ABF184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40C4D6AB260A747900ABF184 /* PBXTargetDependency */,
+			);
+			name = BankTesteiOSv2UITests;
+			productName = BankTesteiOSv2UITests;
+			productReference = 40C4D6A9260A747900ABF184 /* BankTesteiOSv2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40C4D67D260A747600ABF184 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					40C4D684260A747600ABF184 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					40C4D69D260A747900ABF184 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 40C4D684260A747600ABF184;
+					};
+					40C4D6A8260A747900ABF184 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 40C4D684260A747600ABF184;
+					};
+				};
+			};
+			buildConfigurationList = 40C4D680260A747600ABF184 /* Build configuration list for PBXProject "BankTesteiOSv2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40C4D67C260A747600ABF184;
+			productRefGroup = 40C4D686260A747600ABF184 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40C4D684260A747600ABF184 /* BankTesteiOSv2 */,
+				40C4D69D260A747900ABF184 /* BankTesteiOSv2Tests */,
+				40C4D6A8260A747900ABF184 /* BankTesteiOSv2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40C4D683260A747600ABF184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C4D698260A747800ABF184 /* LaunchScreen.storyboard in Resources */,
+				40C4D695260A747800ABF184 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4D69C260A747900ABF184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4D6A7260A747900ABF184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		579DB4664CCAC78824D2DF33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankTesteiOSv2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		942FA9BD0599944140D4A819 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankTesteiOSv2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D6DA00EF6AECF68C8031315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankTesteiOSv2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A305149BCDBE8E8FA5994A3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankTesteiOSv2/Pods-BankTesteiOSv2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankTesteiOSv2/Pods-BankTesteiOSv2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BankTesteiOSv2/Pods-BankTesteiOSv2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40C4D681260A747600ABF184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C4D689260A747600ABF184 /* AppDelegate.swift in Sources */,
+				40C4D68B260A747600ABF184 /* SceneDelegate.swift in Sources */,
+				40C4D693260A747600ABF184 /* BankTesteiOSv2.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4D69A260A747900ABF184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C4D6A3260A747900ABF184 /* BankTesteiOSv2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4D6A5260A747900ABF184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C4D6AE260A747900ABF184 /* BankTesteiOSv2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40C4D6A0260A747900ABF184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40C4D684260A747600ABF184 /* BankTesteiOSv2 */;
+			targetProxy = 40C4D69F260A747900ABF184 /* PBXContainerItemProxy */;
+		};
+		40C4D6AB260A747900ABF184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40C4D684260A747600ABF184 /* BankTesteiOSv2 */;
+			targetProxy = 40C4D6AA260A747900ABF184 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40C4D696260A747800ABF184 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40C4D697260A747800ABF184 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40C4D6B0260A747900ABF184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40C4D6B1260A747900ABF184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40C4D6B3260A747900ABF184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 168DD1D665A28926FE512C32 /* Pods-BankTesteiOSv2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEFYK5FTNU;
+				EXCLUDED_ARCHS = "";
+				INFOPLIST_FILE = BankTesteiOSv2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.BankTesteiOSv2.BankTesteiOSv2.BankTesteiOSv2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40C4D6B4260A747900ABF184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F646826F9C31ABA74FC73820 /* Pods-BankTesteiOSv2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEFYK5FTNU;
+				EXCLUDED_ARCHS = "";
+				INFOPLIST_FILE = BankTesteiOSv2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.BankTesteiOSv2.BankTesteiOSv2.BankTesteiOSv2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40C4D6B6260A747900ABF184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B900EBA2713F3392B4DFCBBB /* Pods-BankTesteiOSv2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEFYK5FTNU;
+				INFOPLIST_FILE = BankTesteiOSv2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.BankTesteiOSv2.BankTesteiOSv2.BankTesteiOSv2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankTesteiOSv2.app/BankTesteiOSv2";
+			};
+			name = Debug;
+		};
+		40C4D6B7260A747900ABF184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F46982230774EA519E27C2E /* Pods-BankTesteiOSv2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEFYK5FTNU;
+				INFOPLIST_FILE = BankTesteiOSv2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.BankTesteiOSv2.BankTesteiOSv2.BankTesteiOSv2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankTesteiOSv2.app/BankTesteiOSv2";
+			};
+			name = Release;
+		};
+		40C4D6B9260A747900ABF184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF45984D5253CE63899FCC6A /* Pods-BankTesteiOSv2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEFYK5FTNU;
+				INFOPLIST_FILE = BankTesteiOSv2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.BankTesteiOSv2.BankTesteiOSv2.BankTesteiOSv2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BankTesteiOSv2;
+			};
+			name = Debug;
+		};
+		40C4D6BA260A747900ABF184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2539FA57DB4F0BA6E172925 /* Pods-BankTesteiOSv2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEFYK5FTNU;
+				INFOPLIST_FILE = BankTesteiOSv2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.BankTesteiOSv2.BankTesteiOSv2.BankTesteiOSv2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BankTesteiOSv2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40C4D680260A747600ABF184 /* Build configuration list for PBXProject "BankTesteiOSv2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C4D6B0260A747900ABF184 /* Debug */,
+				40C4D6B1260A747900ABF184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C4D6B2260A747900ABF184 /* Build configuration list for PBXNativeTarget "BankTesteiOSv2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C4D6B3260A747900ABF184 /* Debug */,
+				40C4D6B4260A747900ABF184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C4D6B5260A747900ABF184 /* Build configuration list for PBXNativeTarget "BankTesteiOSv2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C4D6B6260A747900ABF184 /* Debug */,
+				40C4D6B7260A747900ABF184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C4D6B8260A747900ABF184 /* Build configuration list for PBXNativeTarget "BankTesteiOSv2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C4D6B9260A747900ABF184 /* Debug */,
+				40C4D6BA260A747900ABF184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		40C4D691260A747600ABF184 /* BankTesteiOSv2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				40C4D692260A747600ABF184 /* BankTesteiOSv2.xcdatamodel */,
+			);
+			currentVersion = 40C4D692260A747600ABF184 /* BankTesteiOSv2.xcdatamodel */;
+			path = BankTesteiOSv2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 40C4D67D260A747600ABF184 /* Project object */;
+}

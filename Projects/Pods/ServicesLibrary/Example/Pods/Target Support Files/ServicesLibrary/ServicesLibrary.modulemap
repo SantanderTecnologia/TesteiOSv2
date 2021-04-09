@@ -1,0 +1,6 @@
+framework module ServicesLibrary {
+  umbrella header "ServicesLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

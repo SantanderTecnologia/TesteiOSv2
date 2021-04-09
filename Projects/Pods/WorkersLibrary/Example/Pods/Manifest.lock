@@ -1,0 +1,22 @@
+PODS:
+  - ModelsLibrary (1.1.2)
+  - WorkersLibrary (1.1.5):
+    - ModelsLibrary
+
+DEPENDENCIES:
+  - ModelsLibrary (from `~/Desktop/TesteiOSv2/Projects/Pods/ModelsLibrary`)
+  - WorkersLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  ModelsLibrary:
+    :path: "~/Desktop/TesteiOSv2/Projects/Pods/ModelsLibrary"
+  WorkersLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ModelsLibrary: a43b06326059e33a391dc99ec4bc76752e804ed5
+  WorkersLibrary: 6f5b19187f95cd5ba5621887f7da95226fbea6c6
+
+PODFILE CHECKSUM: 35fd903d1dc1ff894b92653a153ee92f50c3d4a7
+
+COCOAPODS: 1.10.0

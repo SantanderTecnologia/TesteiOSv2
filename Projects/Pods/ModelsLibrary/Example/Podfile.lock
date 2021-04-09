@@ -1,0 +1,16 @@
+PODS:
+  - ModelsLibrary (1.1.2)
+
+DEPENDENCIES:
+  - ModelsLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  ModelsLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ModelsLibrary: a43b06326059e33a391dc99ec4bc76752e804ed5
+
+PODFILE CHECKSUM: 88313286bad31acec929e29bdbc74553d9133c63
+
+COCOAPODS: 1.10.0

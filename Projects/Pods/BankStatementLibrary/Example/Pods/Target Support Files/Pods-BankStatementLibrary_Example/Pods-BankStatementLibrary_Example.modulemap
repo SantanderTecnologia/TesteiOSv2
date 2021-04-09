@@ -1,0 +1,6 @@
+framework module Pods_BankStatementLibrary_Example {
+  umbrella header "Pods-BankStatementLibrary_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

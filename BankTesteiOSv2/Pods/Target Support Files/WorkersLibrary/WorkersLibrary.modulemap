@@ -1,0 +1,6 @@
+framework module WorkersLibrary {
+  umbrella header "WorkersLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

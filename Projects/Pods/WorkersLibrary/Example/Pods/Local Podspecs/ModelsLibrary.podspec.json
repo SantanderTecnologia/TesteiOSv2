@@ -1,0 +1,22 @@
+{
+  "name": "ModelsLibrary",
+  "version": "1.1.2",
+  "summary": "A short description of ModelsLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/LeandroGitHung/ModelsLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "LeandroGitHung": "leandro_lee@yahoo.com.br"
+  },
+  "source": {
+    "git": "https://github.com/LeandroGitHung/ModelsLibrary.git",
+    "tag": "1.1.2"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "ModelsLibrary/Classes/**/*"
+}

@@ -1,0 +1,11 @@
+${PODS_ROOT}/Target Support Files/Pods-BankTesteiOSv2/Pods-BankTesteiOSv2-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/BankStatementLibrary/BankStatementLibrary.framework
+${BUILT_PRODUCTS_DIR}/LoginLibrary/LoginLibrary.framework
+${BUILT_PRODUCTS_DIR}/ModelsLibrary/ModelsLibrary.framework
+${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/ServicesLibrary/ServicesLibrary.framework
+${BUILT_PRODUCTS_DIR}/WorkersLibrary/WorkersLibrary.framework

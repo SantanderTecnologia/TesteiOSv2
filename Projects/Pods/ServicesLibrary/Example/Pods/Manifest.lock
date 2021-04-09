@@ -1,0 +1,53 @@
+PODS:
+  - Alamofire (5.4.2)
+  - ModelsLibrary (1.1.2)
+  - RxAlamofire (6.1.1):
+    - RxAlamofire/Core (= 6.1.1)
+  - RxAlamofire/Core (6.1.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - ServicesLibrary (1.1.3):
+    - ModelsLibrary
+    - RxAlamofire (= 6.1.1)
+    - RxCocoa (= 6.1.0)
+    - RxSwift (= 6.1.0)
+
+DEPENDENCIES:
+  - ModelsLibrary (from `~/Desktop/TesteiOSv2/Projects/Pods/ModelsLibrary`)
+  - RxAlamofire (= 6.1.1)
+  - RxCocoa (= 6.1.0)
+  - RxSwift (= 6.1.0)
+  - ServicesLibrary (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxAlamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  ModelsLibrary:
+    :path: "~/Desktop/TesteiOSv2/Projects/Pods/ModelsLibrary"
+  ServicesLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  ModelsLibrary: a43b06326059e33a391dc99ec4bc76752e804ed5
+  RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  ServicesLibrary: 0d1d04571f90c1ed9f0057c098beb9befc4185ef
+
+PODFILE CHECKSUM: 3baf1fb68a69cc5545ed039e7b87d04076d7ee89
+
+COCOAPODS: 1.10.0
